@@ -1,0 +1,98 @@
+.Typewriter{
+    font-size: 3rem;
+    font-family: 'Poppins';
+    user-select: none;
+}
+@media (min-width:360px) and (max-width:720px){
+  .Typewriter{
+      font-size: 1.7rem;
+  }
+  .tooltip:hover {
+    width: 100vw;
+    background-color: yellow; /* Just for demonstration */
+  }
+}
+.HomeAbout{
+    background: linear-gradient(to right, #353777 0%, #3b5998 50%, #353777 100%),     
+}
+.homeMiddleImg0{
+    filter: drop-shadow(0 0 0.75rem #545456);
+}
+.homeMiddleImg1{
+    filter: drop-shadow(0 0 0.75rem rgb(220, 203, 20));
+}
+.homeMiddleImg2{
+    filter: drop-shadow(0 0 0.75rem #8575ba);
+}
+
+.tooltip-container {
+  position: relative;
+  background: var(--background);
+  cursor: pointer;
+  transition:  0.5s;
+  font-size: 17px;
+  padding: 0.7em 1.8em;
+}
+
+.tooltip {
+  position: absolute;
+  /* top: 120%; */
+  left: 20%;
+  transform: translateX(-100%) translateY(-10%); /* Adjusted the initial position */
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  background: var(--background);
+  transition-duration:  0.5s;
+  border-radius: 0.3em;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 10px;
+  font-family: "Poppins";
+  width: 150%; /* Adjusted the width */
+  padding: 0.6em 1em; /* Adjusted padding */
+}
+
+.tooltip-container:hover .tooltip {
+  top: 80%; /* Adjusted the tooltip position */
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+
+@media screen and (max-width: 768px){
+.tooltip-container {
+  position: relative;
+  background: var(--background);
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 17px;
+  padding: 0.7em 1.8em;
+}
+
+.tooltip {
+  position: fixed; /* Change to fixed for centering on the screen */
+  left: 50%;
+  right:-44%;
+  top: 60%; /* Center vertically on the screen */
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  background: var(--background);
+  transition-duration: 0.5s;
+  border-radius: 0.3em;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 10px;
+  font-family: "Poppins";
+  max-width: 100vw;
+  padding: 0.6em 1em;
+}
+
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+}
+}

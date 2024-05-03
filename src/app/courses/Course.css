@@ -1,0 +1,94 @@
+
+.scroll-image {
+    width: 100%;
+    max-width: 100%; 
+    height: auto;
+    opacity: 0; /* Initially hide the images */
+    transform: translateX(100%);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .scroll-detail {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  /* Container styles to prevent overflow */
+  .left-container,
+  .right {
+    overflow: hidden;
+  }
+  
+  .grid-cols-2 > div > img {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    box-shadow: 10px 10px 20px #b3acac;
+  } 
+  /* .grid-cols-2 > div > img:hover {
+    box-shadow: 0 0 15px #E7414D;
+  }  */
+  .button-course{
+    font-size: 1rem;
+    padding: 1em 2.5em;
+    background-color: #fff;
+    border: 3px solid #E7414D;
+    border-radius: 1em;
+    color: #000;
+    font-weight: bolder;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    box-shadow: -5px 5px 0px 0px #b3acac;
+  }
+  
+  .button-course:hover {
+    transform: translate(5px, -5px);
+  }
+
+  /* YourComponent.css */
+
+@keyframes shrink {
+  0% {
+    color: green;
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+    color: grey;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+    color: grey;
+  }
+
+  100% {
+    transform: scale(2);
+    color: green;
+  }
+}
+
+.animate {
+  transform: translate3d(0, 0, 0);
+  perspective: 1000;
+  filter: blur(0);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform-origin: center left;
+}
+
+.animate--shrink {
+  animation-duration: 1s;
+  animation-name: shrink;
+  animation-timing-function: linear;
+}
+
+.animate--grow {
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-name: grow;
+}
+
+
