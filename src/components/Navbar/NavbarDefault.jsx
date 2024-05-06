@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import  { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Button from "../Button/Button";
 import Link from "next/link";
@@ -16,6 +16,12 @@ function NavbarDefault() {
   };
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const router = useRouter()
+useEffect(() => {
+    // Close the mobile menu when switching from desktop to mobile view
+    if (isMobile) {
+      setMobileMenuOpen(false);
+    }
+  }, [isMobile]);
     
   return (
     <div className="flex z-[999] absolute w-full justify-center items-center ">
@@ -96,7 +102,7 @@ function NavbarDefault() {
           <Button
             value={"Free Consultation"}
             className="
-              buttonn "
+              buttonn p-1"
             onClick={() => {
               router.push('/contact')
               toggleMobileMenu;
