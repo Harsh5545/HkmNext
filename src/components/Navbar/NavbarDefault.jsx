@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 function NavbarDefault() {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(true);
   const [navInput,setNavInput]=useState(false)
 
   const toggleMobileMenu = () => {
