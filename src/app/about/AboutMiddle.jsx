@@ -19,9 +19,8 @@ function AboutMiddle() {
         <div className="grid grid-cols-1 px-4 md:pl-5 md:grid-cols-2 gap-5 ">
           <div className="md:col-span-1 flex flex-col justify-center m-1">
             <p className="text-gray-700 dark:text-gray-300 text-lg">
-              Welcome to 
-              <span className="font-bold"> Harikrushna Multimedia Institute
-              </span>
+              Welcome to
+              <b className="font-bold"> Harikrushna Multimedia Institute</b>
               , located in Surat, Gujarat. We take pride in offering a diverse
               range of creative courses that empower aspiring individuals in the
               fields of multimedia, animation, and design.
@@ -61,24 +60,24 @@ function AboutMiddle() {
           </div>
         </div>
       </div>
-      <div  className="md:px-10 px-5 md:my-32  my-20 ">
-        <h1 className="text-[#0F406D] my-10 mx-10 font-bold text-2xl md:text-5xl">
+      <div className="md:px-10 px-5 md:my-32  my-20 ">
+        <h2 className="text-[#0F406D] my-10 mx-10 font-bold text-2xl md:text-5xl">
           Our Mission <span className="text-[#e9414d] ">& Vision</span>
-        </h1>
+        </h2>
         <div style={bgColor} className="md:p-10 p-5 m-5 rounded-3xl text-center grid grid-cols-1 md:grid-cols-2">
-  <div className="text-[#fff]">
-    <h1 className="font-bold text-xl md:text-4xl">Our Mission</h1>
-    <p className="md:p-10 p-4 md:text-2xl text-md">
-      At <span className="font-medium">Harikrushna Multimedia</span>, we empower students through innovative education, fostering independence and critical thinking.
-    </p>
-  </div>
-  <div className="pt-5 md:pt-0 text-[#fff]">
-    <h1 className="font-bold text-xl md:text-4xl">Our Vision</h1>
-    <p className="md:p-10 p-4 md:text-2xl text-md">
-      <span className="font-medium ">Harikrushna Multimedia's</span> vision is to shape futures through cutting-edge animation education, inspiring artistic excellence and industry leadership.
-    </p>
-  </div>
-</div>
+          <div className="text-[#fff]">
+            <h1 className="font-bold text-xl md:text-4xl">Our Mission</h1>
+            <p className="md:p-10 p-4 md:text-2xl text-md">
+              At <span className="font-medium">Harikrushna Multimedia</span>, we empower students through innovative education, fostering independence and critical thinking.
+            </p>
+          </div>
+          <div className="pt-5 md:pt-0 text-[#fff]">
+            <h3 className="font-bold text-xl md:text-4xl">Our Vision</h3>
+            <p className="md:p-10 p-4 md:text-2xl text-md">
+              <span className="font-medium ">Harikrushna Multimedia's</span> vision is to shape futures through cutting-edge animation education, inspiring artistic excellence and industry leadership.
+            </p>
+          </div>
+        </div>
 
 
       </div>

@@ -7,7 +7,14 @@ export const metadata = {
     description: "About description",
     alternates: {
         canonical: "/about"
-    }
+    },
+    keywords:`'next','react','technology'` ,
+    openGraph: {
+        title: "HKM - About",
+        description: "About description",
+        keywords:`'next','react','technology'`,
+        images: ['/logo.png'],
+    },
 };
 
 
