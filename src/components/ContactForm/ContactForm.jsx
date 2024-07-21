@@ -87,12 +87,12 @@ function ContactForm() {
                 required
               />
             </div>
-            <div className="mb-4 w-full md:w-[60%]">
+            <div className="mb-4 cursor-pointer w-full md:w-[60%]">
               <select
                 value={course}
                 name="message"
                 onChange={handleCourseChange}
-                className="form-control-contact w-full p-3 rounded-3xl"
+                className="form-control-contact cursor-pointer w-full p-3 rounded-3xl"
               >
                 <option value="" disabled>
                   Select a course
@@ -100,7 +100,7 @@ function ContactForm() {
                 {sampleCourseNames.map((courseName, index) => (
                   <option
                     key={index}
-                    className="bg-white text-black"
+                    className="bg-white cursor-pointer text-black"
                     value={courseName}
                   >
                     {courseName}
