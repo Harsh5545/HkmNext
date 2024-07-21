@@ -177,11 +177,11 @@ const page = ({ params }) => {
           data-aos="fade-left"
           className="flex justify-center md:w-[60%] w-full"
         >
-          <Image src={course.WULImage} width={700} alt="" height={500} />
+          <Image src={course.WULImage} width={800} alt="" height={500} />
         </div>
         <div
           data-aos="fade-right"
-          className="flex flex-1 flex-col gap-10 justify-center "
+          className="flex flex-1 flex-col gap-10 justify-center  "
           style={{ color: "white" }}
         >
           <h1 className="md:text-5xl text-3xl text-center">
@@ -195,7 +195,7 @@ const page = ({ params }) => {
               </li>
             ))}
           </ul>
-          <div className="mx-auto">
+          <div className="flex justify-center items-center">
             <Button
               value="Explore Now"
               className="btn"
