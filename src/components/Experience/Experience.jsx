@@ -38,14 +38,14 @@ const Experience = () => {
   // }, []);
   return (
     <>
-      <OrbitControls     enableZoom={true}
+      <OrbitControls enableZoom={false}
         enablePan={true}
         enableRotate={true}
         minDistance={50}
         maxDistance={150} />
       <ambientLight />
       <directionalLight
-        position={[-5, 5, 5]}
+        position={[1, 5, 15]}
         castShadow
         shadow-mapSize-width={1024}
         shadow-mapSize-height={1024}
@@ -53,9 +53,9 @@ const Experience = () => {
       <PerspectiveCamera makeDefault position={groupCamera} />
 
       {/* {modelLoaded && ( */}
-        <group position={groupPosition} scale={modelScale}>
-          <Wsa />
-        </group>
+      <group position={groupPosition} scale={modelScale}>
+        <Wsa />
+      </group>
       {/* )} */}
     </>
   );

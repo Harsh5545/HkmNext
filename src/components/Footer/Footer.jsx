@@ -17,7 +17,7 @@ function Footer() {
           <div className="lg:flex">
             <div className="w-full -mx-6 lg:w-2/5">
               <div className="px-6">
-                <Link onClick={() => handleNavLinkClick()} href="/">
+                <Link onClick={() => handleNavLinkClick()} href ="/">
                   <Image width={100} height={100} className="w-auto h-20" src="/assets/logo.png" alt="footer_logo" />
                 </Link>
 
@@ -102,7 +102,7 @@ function Footer() {
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
-                    href="/course"
+                    href="/courses"
                     className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
                     Course
@@ -161,9 +161,18 @@ function Footer() {
                   <h3 className="text-gray-700 uppercase dark:text-white">
                     Contact
                   </h3>
-                  <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                    +91 9664833542
-                  </span>
+                 <a
+            href="tel:+919664833542"
+            className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+          >
+            +91 9664833542
+          </a>
+          <a
+            href="https://wa.me/919664833542"
+            className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+          >
+            Chat on WhatsApp
+          </a>
                   <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
                     harikrushnamultimedia@gmail.com
                   </span>

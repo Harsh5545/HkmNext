@@ -1,4 +1,4 @@
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Button from "../Button/Button";
 import Link from "next/link";
@@ -7,37 +7,50 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 function NavbarDefault() {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(true);
-  const [navInput,setNavInput]=useState(false)
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [navInput, setNavInput] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen((prev) => !prev);
-    setNavInput((prev) => !prev)
+    setNavInput((prev) => !prev);
   };
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
-  const router = useRouter()
-useEffect(() => {
-    // Close the mobile menu when switching from desktop to mobile view
-    if (isMobile) {
+  const router = useRouter();
+  // useEffect(() => {
+  //     // Close the mobile menu when switching from desktop to mobile view
+  //     if (isMobile) {
+  //       setMobileMenuOpen(false);
+  //     }
+  //   }, [isMobile]);
+  useEffect(() => {
+    if (!isMobile) {
       setMobileMenuOpen(false);
+      setNavInput(false);
     }
   }, [isMobile]);
-    
+
   return (
     <div className="flex z-[999] absolute w-full justify-center items-center ">
       <div className="flex-col md:flex-row flex justify-between px-1 md:px-10 rounded-md w-[90%]  items-center backdrop-filter backdrop-blur-md bg-white py-1 mt-4 ">
         <div className="flex justify-between  items-center w-full md:w-0">
-          <span className="text-xl">
-            <Image
-              src="/assets/logo.png"
-              width={100} height={100}
-              className="md:max-w-[6rem] max-w-[6rem]"
-              alt="HarikrushnaMultimedia institue logo"
-            />
-          </span>
+            <Link href="/" passHref>
+      <span className="text-xl cursor-pointer">
+        <Image
+          src="/assets/logo.png"
+          width={100}
+          height={100}
+          className="md:max-w-[6rem] max-w-[6rem]"
+          alt="Harikrushna Multimedia Institute logo"
+        />
+      </span>
+    </Link>
           <div className="md:hidden">
             <label className="hamburger">
-              <input type="checkbox" onChange={toggleMobileMenu} checked={navInput} />
+              <input
+                type="checkbox"
+                onChange={toggleMobileMenu}
+                checked={navInput}
+              />
               <svg viewBox="0 0 32 32">
                 <path
                   className="line line-top-bottom"
@@ -50,61 +63,61 @@ useEffect(() => {
         </div>
 
         <div className="flex flex-col items-start">
-          <ul
-            className={`flex flex-col font-poppins md:flex-row items-center gap-8 md:gap-10 h-[20rem] md:h-0 justify-center text-black ${
-              isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
-            }`}
-          >
-            <li>
-              <Link
-                href="/"
-                className=" hover:text-black"
-                onClick={toggleMobileMenu}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about"
-                className=" hover:text-black"
-                onClick={toggleMobileMenu}
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/courses"
-                className="hover:text-black"
-                onClick={toggleMobileMenu}
-              >
-                Course
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/student-project"
-                className=" hover:text-black"
-                onClick={toggleMobileMenu}
-              >
-                Student Project
-              </Link>
-            </li>
-          </ul>
+          <div>
+            <ul
+              className={`flex flex-col md:flex-row font-poppins items-center gap-8 md:gap-4 h-[20rem] md:h-0 justify-center text-black font-medium font-jakarta ${isMobileMenuOpen ? "block" : "hidden"
+                } md:flex`}
+            >
+              <li>
+                <Link
+                  href="/"
+                  className=" hover:text-black"
+                  onClick={toggleMobileMenu}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className=" hover:text-black"
+                  onClick={toggleMobileMenu}
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/courses"
+                  className="hover:text-black"
+                  onClick={toggleMobileMenu}
+                >
+                  Course
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/student-project"
+                  className=" hover:text-black"
+                  onClick={toggleMobileMenu}
+                >
+                  Student Project
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div
-          className={`${
-            isMobile ? (isMobileMenuOpen ? "block" : "hidden") : "flex"
-          }`}
+          className={`${isMobileMenuOpen ? "block" : "hidden"
+            } md:flex gap-2 flex-col-reverse md:flex-row items-center justify-center`}
         >
           <Button
             value={"Free Consultation"}
             className="
               buttonn p-1"
             onClick={() => {
-              router.push('/contact')
+              router.push("/contact");
               toggleMobileMenu;
             }}
           />

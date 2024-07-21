@@ -68,7 +68,7 @@ const page = () => {
                         >
                             Courses
                         </h1>
-                        <p data-aos="fade-right" className="text-xl mb-4 text-white">
+                        <p data-aos="fade-right" className="md:text-xl mb-4 text-base text-left text-white">
                             Welcome to Harikrushna Multimedia Institute, the best institute in
                             Surat, offering dynamic courses to shape your creative career. Our
                             expert faculty provides industry-relevant and employment-oriented

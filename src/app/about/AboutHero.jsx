@@ -38,7 +38,7 @@ function AboutHero() {
   }, []);
 
   return (
-    <div className="flex justify-center md:items-end items-center h-[90vh]">
+    <div className="flex justify-center md:items-end items-center h-full min-h-fit">
       <div className="grid md:grid-cols-2 grid-cols-1">
         <div className="flex justify-center items-end">
           <Image
