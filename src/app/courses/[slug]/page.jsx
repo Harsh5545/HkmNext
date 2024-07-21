@@ -222,7 +222,7 @@ const page = ({ params }) => {
         >
           <h1 className="md:text-5xl font-poppins text-2xl">CERTIFICATIONS</h1>
           <Image
-            src="/course/certificate-medal.webp"
+            src="/course/certificate-medal-transformed.webp"
             width={209}
             height={200}
             alt="Certifiacte image from Harikrushnamultimedia.com"
