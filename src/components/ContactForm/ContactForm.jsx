@@ -35,11 +35,9 @@ function ContactForm() {
 
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
       (result) => {
-        console.log(result.text);
         setMessage("Message sent successfully!");
       },
       (error) => {
-        console.log(error.text);
         setMessage("Error sending message. Please try again.");
       }
     );
@@ -132,7 +130,7 @@ function ContactForm() {
           <Image
             src="/course/ContactUs.webp"
             width={400}
-height={300}
+            height={300}
             alt="contact image of harikrushna Multimedia institute"
           />
         </div>

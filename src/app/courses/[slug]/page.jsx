@@ -6,13 +6,12 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import { Button } from "@mui/material";
+import Button from "@/components/Button/Button";
 import VerticalCarousel from "@/components/slider/VerticalCarousel";
 import { CourseDetails, coursePage } from "@/helpers/Constant";
 
 const page = ({ params }) => {
   const { slug } = params;
-  console.log(slug);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [course, setCourse] = useState([]);
   const handleMouseMove = (e) => {
@@ -198,9 +197,9 @@ const page = ({ params }) => {
           </ul>
           <div className="mx-auto">
             <Button
+              value="Explore Now"
               className="btn"
               onClick={() => router("/contact")}
-              value={"Explore Now"}
             />
           </div>
         </div>
