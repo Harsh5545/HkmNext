@@ -22,6 +22,7 @@ function HomeMiddle() {
     speed: 200,
     slidesToShow: 1,
     autoplay: true,
+    arrows: false
   };
   const handleNavLinkClick = () => {
     window.scrollTo(0, 0);
@@ -56,7 +57,7 @@ function HomeMiddle() {
             <div
               className="flex-1 flex justify-center my-2 px-2 md:px-14 text-center gap-6 items-center flex-col transition-all duration-1000 transform text-sm "
               key={index}
-              data-aos="fade-right" 
+              data-aos="fade-right"
             >
               <img
                 src={course.image}
@@ -80,7 +81,7 @@ function HomeMiddle() {
                 <div
                   className={`flex-1 flex justify-center  px-2 md:px-14 text-center gap-6 items-center flex-col transition-all duration-1000 transform text-sm `}
                   key={index}
-                  data-aos= "fade-right"
+                  data-aos="fade-right"
                 >
                   <img
                     src={course.image}

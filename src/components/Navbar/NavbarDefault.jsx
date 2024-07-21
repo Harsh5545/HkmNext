@@ -63,56 +63,54 @@ function NavbarDefault() {
         </div>
 
         <div className="flex flex-col items-start">
-<div>
-          <ul
-             className={`flex flex-col text-[#0D0C22] dark:text-white font-poppins md:flex-row items-center gap-8 md:gap-10 h-[20rem] md:h-0 justify-center ${
-              isMobileMenuOpen ? "block" : "hidden"
-            } md:flex`}
-          >
-            <li>
-              <Link
-                href="/"
-                className=" hover:text-black"
-                onClick={toggleMobileMenu}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about"
-                className=" hover:text-black"
-                onClick={toggleMobileMenu}
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/courses"
-                className="hover:text-black"
-                onClick={toggleMobileMenu}
-              >
-                Course
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/student-project"
-                className=" hover:text-black"
-                onClick={toggleMobileMenu}
-              >
-                Student Project
-              </Link>
-            </li>
-          </ul>
-</div>
+          <div>
+            <ul
+              className={`flex flex-col md:flex-row font-poppins items-center gap-8 md:gap-4 h-[20rem] md:h-0 justify-center text-black font-medium font-jakarta ${isMobileMenuOpen ? "block" : "hidden"
+                } md:flex`}
+            >
+              <li>
+                <Link
+                  href="/"
+                  className=" hover:text-black"
+                  onClick={toggleMobileMenu}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className=" hover:text-black"
+                  onClick={toggleMobileMenu}
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/courses"
+                  className="hover:text-black"
+                  onClick={toggleMobileMenu}
+                >
+                  Course
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/student-project"
+                  className=" hover:text-black"
+                  onClick={toggleMobileMenu}
+                >
+                  Student Project
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div
-          className={`${
-            isMobileMenuOpen ? "block" : "hidden"
-          } md:flex gap-2 flex-col-reverse md:flex-row items-center justify-center`}
+          className={`${isMobileMenuOpen ? "block" : "hidden"
+            } md:flex gap-2 flex-col-reverse md:flex-row items-center justify-center`}
         >
           <Button
             value={"Free Consultation"}

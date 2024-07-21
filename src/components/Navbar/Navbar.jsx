@@ -1,5 +1,5 @@
 "use client";
-import  { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import NavbarDefault from "./NavbarDefault.jsx";
 import NavbarFixed from "./NavbarFixed.jsx";
@@ -9,7 +9,7 @@ function Navbar() {
   const [isScrollPast, setIsScrollPast] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 91) {
       setIsScrollPast(true);
       //console.log("Scrolled Past");
     } else {

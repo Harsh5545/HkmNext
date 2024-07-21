@@ -71,7 +71,7 @@ function ContactForm() {
             onSubmit={sendEmail}
             className="text-white flex flex-col items-center"
           >
-            <div className="mb-4 w-full md:w-[60%]">
+            <div className="mb-4 w-[80%] md:w-[60%]">
               <input
                 name="user_name"
                 className="form-control shadow-none w-full p-3 rounded-3xl"
@@ -81,7 +81,7 @@ function ContactForm() {
                 required
               />
             </div>
-            <div className="mb-4 w-full md:w-[60%]">
+            <div className="mb-4 w-[80%] md:w-[60%]">
               <input
                 name="user_email"
                 className="form-control shadow-none w-full p-3 rounded-3xl"
@@ -89,7 +89,7 @@ function ContactForm() {
                 required
               />
             </div>
-            <div className="mb-4 w-full md:w-[60%]">
+            <div className="mb-4 w-[80%] md:w-[60%]">
               <input
                 type="tel"
                 className="form-control shadow-none w-full p-3 rounded-3xl"
@@ -98,7 +98,7 @@ function ContactForm() {
                 required
               />
             </div>
-            <div className="mb-4 cursor-pointer w-full md:w-[60%]">
+            <div className="mb-4 cursor-pointer w-[80%] md:w-[60%]">
               <select
                 value={course}
                 name="message"
