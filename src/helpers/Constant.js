@@ -487,7 +487,7 @@ export const faqData = [
 export const testimonialsData = [
     {
         id: 1,
-        name: "Hetal Patel",
+        name: "Harsh Jaiswal",
         photo: "/course/BouStudent1.webp",
         contentHeading: "Excellent Teaching Style",
         content:
@@ -495,7 +495,7 @@ export const testimonialsData = [
     },
     {
         id: 2,
-        name: "Rajesh Shah",
+        name: "Ajay Sharma",
         photo: "/course/BoyStudent.webp",
         contentHeading: "Highly Supportive Faculty",
         content:
@@ -503,7 +503,7 @@ export const testimonialsData = [
     },
     {
         id: 3,
-        name: "Asha Desai",
+        name: "Deepali Anare",
         photo: "/course/GirlStudent1.webp",
         contentHeading: "Wonderful Learning Experience",
         content:
@@ -511,7 +511,7 @@ export const testimonialsData = [
     },
     {
         id: 4,
-        name: "Jignesh Mehta",
+        name: "Lokesh Narkhede",
         photo: "/course/BoyStudent2.webp",
         contentHeading: "Friendly and Encouraging Atmosphere",
         content:
@@ -519,8 +519,8 @@ export const testimonialsData = [
     },
     {
         id: 5,
-        name: "Pooja Joshi",
-        photo: "/course/GirlStudent.webp",
+        name: "Manasi Kadam",
+        photo: "/course/manasiKadam.png",
         contentHeading: "Emphasis on Practical Skills",
         content:
             "The institute's emphasis on practical skills not only sets it apart but also enhances employability. The placement assistance provided after completing the course is a significant advantage for graduates seeking career opportunities.",
