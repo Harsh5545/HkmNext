@@ -39,7 +39,7 @@ function HomeMiddle() {
             <p className=" font-extrabold">Our Popular Courses</p>
           </h2>
           <Link
-            href="/course"
+            href="/courses"
             className="hover:scale-110 hover:text-blue-500 transition-transform"
             onClick={() => handleNavLinkClick()}
           >

@@ -102,7 +102,7 @@ function Footer() {
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
-                    href="/course"
+                    href="/courses"
                     className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
                     Course

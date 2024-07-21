@@ -1,6 +1,6 @@
 export const CourseData = [
     {
-        course: "3D Architectural",
+        course: "3d Architectural",
         image: "/model/3D-ARCHITECTURAL.webp",
         alt: "Harikrushna Multimedia 3D Architectural Image",
         description:
