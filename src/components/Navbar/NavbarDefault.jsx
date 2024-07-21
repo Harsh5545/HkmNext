@@ -33,15 +33,17 @@ function NavbarDefault() {
     <div className="flex z-[999] absolute w-full justify-center items-center ">
       <div className="flex-col md:flex-row flex justify-between px-1 md:px-10 rounded-md w-[90%]  items-center backdrop-filter backdrop-blur-md bg-white py-1 mt-4 ">
         <div className="flex justify-between  items-center w-full md:w-0">
-          <span className="text-xl">
-            <Image
-              src="/assets/logo.png"
-              width={100}
-              height={100}
-              className="md:max-w-[6rem] max-w-[6rem]"
-              alt="HarikrushnaMultimedia institue logo"
-            />
-          </span>
+            <Link href="/" passHref>
+      <span className="text-xl cursor-pointer">
+        <Image
+          src="/assets/logo.png"
+          width={100}
+          height={100}
+          className="md:max-w-[6rem] max-w-[6rem]"
+          alt="Harikrushna Multimedia Institute logo"
+        />
+      </span>
+    </Link>
           <div className="md:hidden">
             <label className="hamburger">
               <input
