@@ -92,7 +92,7 @@ const page = ({ params }) => {
     <div className=" font-poppins overflow-hidden mx-auto">
       <div className="" style={backgroundStyles}>
         <div style={bgOverlayStyle}></div>
-        <div className="mb-8 h-[100vh] flex md:flex-row flex-col-reverse justify-center items-center">
+        <div className="mb-8 h-[100vh] flex gap-5  md:flex-row flex-col-reverse justify-between items-center">
           <div
             style={{
               transform: `rotateX(${calculateRotation(
@@ -114,7 +114,7 @@ const page = ({ params }) => {
 
           <div
             data-aos="fade-down-left"
-            className="flex-1 flex justify-end mt-24 flex-col items-center  text-center"
+            className="flex-1 flex relative justify-end  flex-col items-center  text-center"
           >
             <h1
               className="text-3xl md:text-4xl font-bold mb-4"
@@ -123,7 +123,7 @@ const page = ({ params }) => {
               {course.heading}
             </h1>
             <p
-              className="text-md md:text-xl w-[90%]"
+              className="text-md  md:text-xl w-[90%]"
               style={{ color: "white" }}
             >
               {course.headingPara}{" "}
