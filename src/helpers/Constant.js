@@ -138,7 +138,7 @@ export const CourseDetails = [
   {
     id: "2",
     path: "/course/Jwellery.webp",
-    course: "3D JEWELLERY DESIGN",
+    course: "3d Jewelry Design",
     description:
       "Master the art of 3D jewelry design and turn your creative ideas into stunning pieces.",
     alt: "3D Jewelry Design Course Image",
@@ -169,7 +169,7 @@ export const CourseDetails = [
   {
     id: "3",
     path: "/course/3D ARCHITECTURAL.webp",
-    course: "3D ARCHITECTURAL",
+    course: "3d Architectural",
     description:
       "Explore the world of 3D architectural design and bring buildings to life.",
     alt: "3D Architectural Design Course Image",
@@ -200,7 +200,7 @@ export const CourseDetails = [
   {
     id: "4",
     path: "/course/Video-editing.webp",
-    course: "VIDEO EDITING",
+    course: "Video Editing",
     description:
       "Learn the art of video editing and create compelling visual stories.",
     alt: "Video Editing Course Image",
@@ -232,7 +232,7 @@ export const CourseDetails = [
   {
     id: "5",
     path: "/course/CourseAnimation.webp",
-    course: "3D ANIMATION",
+    course: "3d Animation",
     description:
       "Dive into the world of 3D animation and bring characters and scenes to life.",
     alt: "3D Animation Course Image",
@@ -262,7 +262,7 @@ export const CourseDetails = [
   {
     id: "6",
     path: "/course/VFXCourse.webp",
-    course: "VISUAL EFFECT",
+    course: "Visual Effect",
     description:
       "Master the techniques of visual effects and add magic to your videos and films.",
     alt: "Visual Effect Course Image",
@@ -295,7 +295,7 @@ export const CourseDetails = [
   {
     id: "7",
     path: "/course/2danimation.webp",
-    course: "2D ANIMATION",
+    course: "2d Animation",
     description:
       "Learn the principles of 2D animation and create captivating animated stories.",
     alt: "2D Animation Course Image",
@@ -326,7 +326,7 @@ export const CourseDetails = [
   {
     id: "8",
     path: "/course/graphics-design.webp",
-    course: "GRAPHICS DESIGN",
+    course: "Graphics Design",
     description:
       "Develop your graphic design skills and create stunning visuals for various purposes.",
     alt: "Graphics Design Course Image",
@@ -357,7 +357,7 @@ export const CourseDetails = [
   {
     id: "9",
     path: "/course/Graphic-design-animation.webp",
-    course: "GRAPHICS & ANIMATION",
+    course: "Graphics And Animation",
     description:
       "Immerse yourself in a comprehensive program covering graphic design and animation techniques.",
     alt: "Graphics & Animation Program Image",
@@ -401,7 +401,7 @@ export const CourseDetails = [
   {
     id: "10",
     path: "/course/game-design-animation.webp",
-    course: "PROGRAM IN GAME DESIGN",
+    course: "Program In Game Design",
     description:
       "Explore a specialized program in game design and bring your game concepts to life with creativity and innovation.",
     alt: "Game Design Program Image",

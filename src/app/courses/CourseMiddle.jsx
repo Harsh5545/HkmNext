@@ -18,16 +18,20 @@ const CourseMiddle = () => {
       offset: 100,
     });
   }, []);
+
+    
  
   return (
     <div className="flex py-12 justify-center bg-gray-100 overflow-x-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {CourseDetails.map((course) => (
+           
           <div
+
             key={course.id}
             className="flex m-5 flex-col items-center justify-center"
             data-aos={course.id % 2 ? "fade-right" : "fade-left"}
-          >
+          > {console.log(course.course)}
             <img
               src={course.path}
               width={500}
@@ -39,7 +43,8 @@ const CourseMiddle = () => {
               {course.description}
             </p>
             <Link
-                href={`/courses/${course.course}`}
+                href={`/courses/${course.course.toLowerCase().replace(/\s+/g, '-')}`}
+
               className="p-4 button-course"
               onClick={() => {
                 window.scrollTo(0, 0);
