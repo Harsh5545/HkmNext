@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useEffect } from "react";
-
 import { CourseData } from "../../helpers/Constant";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
 import Button from "../../components/Button/Button";
@@ -28,9 +27,6 @@ function HomeMiddle() {
     window.scrollTo(0, 0);
   };
 
-  const handleButtonClick = (courseSlug) => {
-    router.push(`/courses/${courseSlug.toLowerCase().replace(/\s+/g, '-')}`);
-  };
   return (
     <div className="w-full font-poppins  flex justify-center ">
       <div className="w-[90%] rounded-3xl flex md:py-1 py-8 flex-col md:flex-col shadow-2xl md:mt-[-3rem] mt-[-1rem] bg-white z-10">
@@ -43,7 +39,7 @@ function HomeMiddle() {
             <p className=" font-extrabold">Our Popular Courses</p>
           </h2>
           <Link
-            href="/courses"
+            href="/course"
             className="hover:scale-110 hover:text-blue-500 transition-transform"
             onClick={() => handleNavLinkClick()}
           >
@@ -72,7 +68,7 @@ function HomeMiddle() {
                 {course.course}
               </h3>
               <p className="font-poppins">{course.description}</p>
-              <Button value={course.buttonText} onClick={() => handleButtonClick(course.course)} className="p-1 btn" />
+              <Button value={course.buttonText} className="p-1 btn" />
             </div>
           ))}
         </div>
@@ -96,7 +92,7 @@ function HomeMiddle() {
                     {course.course}
                   </h3>
                   <p className="font-poppins">{course.description}</p>
-                  <Button value={course.buttonText} onClick={() => handleButtonClick(course.course)} className="p-1 btn" />
+                  <Button value={course.buttonText} className="p-1 btn" />
                 </div>
               ))}
               {/* Add more slides as needed */}
