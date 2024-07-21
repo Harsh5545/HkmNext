@@ -9,7 +9,7 @@ function ContactForm() {
     "Game Design",
     "2D Animation",
     "3D Animation",
-    "Graphic Desgin",
+    "Graphic Design",
     "Video Editing",
     "3D ARCHITECTURAL",
     "3D JEWELLERY DESIGN",
@@ -19,14 +19,18 @@ function ContactForm() {
   ];
 
   const [course, setCourse] = useState("");
+  const [name, setName] = useState(""); // State for user's name
+  const [message, setMessage] = useState(""); // Success message state
+  const form = useRef();
+
   const handleCourseChange = (e) => {
     setCourse(e.target.value);
   };
 
-  const form = useRef();
-  const [message, setMessage] = useState("");
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
 
-  // Move the sendEmail function inside the component
   const sendEmail = (e) => {
     e.preventDefault();
     const serviceId = "service_0krafbr";
@@ -35,7 +39,12 @@ function ContactForm() {
 
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
       (result) => {
-        setMessage("Message sent successfully!");
+        setMessage(
+          `Thank you ${name} for reaching out to Harikrushna Multimedia Classes.\n\nOur team will review your information, and we will get back to you as soon as possible.`
+        );
+        form.current.reset(); // Clear all input fields
+        setCourse(""); // Clear course selection
+        setName(""); // Clear name input
       },
       (error) => {
         setMessage("Error sending message. Please try again.");
@@ -67,6 +76,8 @@ function ContactForm() {
                 name="user_name"
                 className="form-control shadow-none w-full p-3 rounded-3xl"
                 placeholder="Name"
+                value={name}
+                onChange={handleNameChange}
                 required
               />
             </div>
@@ -118,20 +129,35 @@ function ContactForm() {
               </button>
             </div>
           </form>
+          {message && (
+            <div
+              className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+              style={{ zIndex: 999 }}
+            >
+              <div className="bg-white flex flex-col items-center w-full md:w-1/2 p-5 rounded-lg shadow-lg">
+                <p className="text-base md:text-lg">{message}</p>
+                <button
+                  onClick={() => setMessage("")}
+                  className="btn text-white px-3 py-2 m-2 text-sm md:text-base"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
         </div>
         <div className="md:flex-1 flex justify-center flex-col gap-10 items-center text-white py-3 px-4">
-          <h2 className="h2 text-center md:text-3xl text-2xl font-bold">
+          <h2 className="h2 text-center md:text-xl text-2xl font-bold">
             WE'D LOVE TO HEAR FROM YOU
           </h2>
           <p className="text-justify">
             Fill the form so we can get to know you and your needs better.{" "}
           </p>
-          {/* Ensure that Contact is imported */}
           <Image
             src="/course/ContactUs.webp"
             width={400}
             height={300}
-            alt="contact image of harikrushna Multimedia institute"
+            alt="contact image of Harikrushna Multimedia Institute"
           />
         </div>
       </div>
