@@ -22,7 +22,7 @@ function Footer() {
                 </Link>
 
                 <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">
-                  Join 31,000+ other and never miss out on new tips, tutorials,
+                  Join <b>31,000+ </b> 31,000+ other and never miss out on new tips, tutorials,
                   and more.
                 </p>
 
@@ -117,9 +117,9 @@ function Footer() {
                 </div>
 
                 <div>
-                  <h3 className="text-gray-700 uppercase dark:text-white">
+                  <h2 className="text-gray-700 uppercase dark:text-white">
                     Courses
-                  </h3>
+                  </h2>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/courses/game-design"

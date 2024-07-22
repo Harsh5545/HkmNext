@@ -8,9 +8,9 @@ function ContactMap() {
           <div>
            
 
-            <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">
+            <span className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">
               Get in touch
-            </h1>
+            </span>
 
             <p className="mt-3 text-gray-500 dark:text-gray-400">
               Our friendly team would love to hear from you.
@@ -37,9 +37,9 @@ function ContactMap() {
                   </svg>
                 </span>
 
-                <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
+                <p className="mt-4 text-base font-medium text-gray-800 dark:text-white">
                   Email
-                </h2>
+                </p>
                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
                   Our friendly team is here to help.
                 </p>
@@ -71,9 +71,9 @@ function ContactMap() {
                   </svg>
                 </span>
 
-                <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
+                <h4 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
                   Office
-                </h2>
+                </h4>
                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
                   Come say hello at our office HQ.
                 </p>
@@ -100,9 +100,9 @@ function ContactMap() {
                   </svg>
                 </span>
 
-                <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
+                <h5 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
                   Phone
-                </h2>
+                </h5>
                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
                   Mon-sat from 9am to 8pm.
                 </p>

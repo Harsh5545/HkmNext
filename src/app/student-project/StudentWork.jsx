@@ -67,12 +67,12 @@ function StudentWork() {
     return (
         <div className="overflow-hidden">
             <div className="flex flex-col my-5 justify-center items-center">
-                <h1
+                <h2
                     data-aos="fade-down"
                     className="md:text-4xl text-3xl font-poppins font-bold text-center"
                 >
                     MODELLING - STUDENTS PROJECTS
-                </h1>
+                </h2>
                 <div
                     data-aos="fade-left"
                     className="md:grid my-10 md:grid-cols-3 justify-center items-center gap-5 flex-col md:flex-row "
@@ -103,12 +103,12 @@ function StudentWork() {
 
             {/* Video project */}
             <div className="my-10 mt-[10rem] flex gap-10 flex-col justify-center items-center">
-                <h1
+                <h3
                     data-aos="fade-up"
                     className="text-4xl font-poppins font-bold text-center"
                 >
                     Student Project Videos
-                </h1>
+                </h3>
                 <div data-aos="fade-right" className="flex gap-10 md:flex-row flex-col">
                     <iframe
                         className="w-full md:w-[40rem] h-[20rem] md:h-[25rem]"
@@ -131,10 +131,10 @@ function StudentWork() {
 
             {/* student Other Project */}
             <div className="flex justify-center mt-[8rem]  items-center flex-col ">
-                <h1 data-aos="fade-left" className="text-4xl font-poppins font-bold">
+                <h4 data-aos="fade-left" className="text-4xl font-poppins font-bold">
                     {" "}
                     Other Project
-                </h1>
+                </h4>
                 <div>
                     <ul className="grid my-10 md:grid-cols-3 grid-cols-1 gap-10  ">
                         {StudentData.map((work) => (
@@ -156,12 +156,12 @@ function StudentWork() {
 
             <section className="bg-white dark:bg-gray-900 my-10 rounded-md w-[90%] mx-auto">
                 <div className="container px-6 py-10 mx-auto">
-                    <h1
+                    <h5
                         data-aos="fade-left"
                         className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white my-4"
                     >
                         What Students are saying
-                    </h1>
+                    </h5>
 
                     <div data-aos="fade-up" className="flex justify-center mx-auto mt-6">
                         <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
@@ -207,9 +207,9 @@ function StudentWork() {
                                 />
 
                                 <div className="mt-4 text-center">
-                                    <h1 className="font-semibold text-gray-800 dark:text-white">
+                                    <h6 className="font-semibold text-gray-800 dark:text-white">
                                         {currentTestimonial.name}
-                                    </h1>
+                                    </h6>
                                 </div>
                             </div>
 
