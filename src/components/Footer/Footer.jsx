@@ -17,7 +17,7 @@ function Footer() {
           <div className="lg:flex">
             <div className="w-full -mx-6 lg:w-2/5">
               <div className="px-6">
-                <Link onClick={() => handleNavLinkClick()} href ="/">
+                <Link onClick={() => handleNavLinkClick()} href="/">
                   <Image width={100} height={100} className="w-auto h-20" src="/assets/logo.png" alt="footer_logo" />
                 </Link>
 
@@ -109,7 +109,7 @@ function Footer() {
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
-                    href="contact"
+                    href="/contact"
                     className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
                     ContactUs
@@ -122,35 +122,35 @@ function Footer() {
                   </h3>
                   <Link
                     onClick={() => handleNavLinkClick()}
-                    href="/course/game-design"
+                    href="/courses/game-design"
                     className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
                     Game Design
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
-                    href="/course/3d-animation"
+                    href="/courses/3d-animation"
                     className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
                     3D Animation
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
-                    href="/course/graphics-design"
+                    href="/courses/graphics-design"
                     className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
                     Graphics Design
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
-                    href="/course/3d-architectural"
+                    href="/courses/3d-architectural"
                     className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
                     3D Architectural
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
-                    href="/course/video-editing"
+                    href="/courses/video-editing"
                     className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
                     Video Editing
@@ -161,18 +161,18 @@ function Footer() {
                   <h3 className="text-gray-700 uppercase dark:text-white">
                     Contact
                   </h3>
-                 <a
-            href="tel:+919664833542"
-            className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-          >
-            +91 9664833542
-          </a>
-          <a
-            href="https://wa.me/919664833542"
-            className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
-          >
-            Chat on WhatsApp
-          </a>
+                  <a
+                    href="tel:+919664833542"
+                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                  >
+                    +91 9664833542
+                  </a>
+                  <a
+                    href="https://wa.me/919664833542"
+                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                  >
+                    Chat on WhatsApp
+                  </a>
                   <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
                     harikrushnamultimedia@gmail.com
                   </span>

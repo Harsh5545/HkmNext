@@ -59,17 +59,17 @@ function NavbarFixed() {
         {/* <span className="text-xl">
           <Image width={100} height={100} src="/assets/logo.png" className="md:max-w-20 max-w-10" alt="HarikrushnaMultimedia institue logo" />
         </span> */}
-  <Link href="/" passHref>
-      <span className="text-xl cursor-pointer">
-        <Image
-          src="/assets/logo.png"
-          width={100}
-          height={100}
-          className="md:max-w-20 max-w-10"
-          alt="Harikrushna Multimedia Institute logo"
-        />
-      </span>
-    </Link>
+        <Link href="/" passHref>
+          <span className="text-xl cursor-pointer">
+            <Image
+              src="/assets/logo.png"
+              width={100}
+              height={100}
+              className="md:max-w-20 max-w-10"
+              alt="Harikrushna Multimedia Institute logo"
+            />
+          </span>
+        </Link>
         <div className="md:hidden">
           <label className="hamburger">
             <input type="checkbox" onChange={toggleMobileMenu} checked={navInput} />
@@ -120,7 +120,7 @@ function NavbarFixed() {
               buttonn "
           onClick={() => {
             router.push("/contact");
-            toggleMobileMenu;
+            toggleMobileMenu()
           }}
         />
       </div>
