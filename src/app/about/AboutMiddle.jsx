@@ -23,16 +23,12 @@ function AboutMiddle() {
               <b className="font-bold"> Harikrushna Multimedia Institute</b>
               , located in Surat, Gujarat. We take pride in offering a diverse
               range of creative courses that empower aspiring individuals in the
-              fields of multimedia, animation, and design.
+              fields of <b>multimedia</b>,<b>animation</b> , and <b>design</b>.
             </p>
             <p className="text-gray-700 dark:text-gray-300 text-lg mt-4">
               Our institute is equipped with state-of-the-art facilities and
               experienced instructors who are passionate about nurturing talent.
-              Whether you are interested in 3D Architectural design, Video
-              Editing, Game Design, 3D Animation, Visual Effects, 2D Animation,
-              3D Jewellery Design, Graphics Design, or our specialized programs
-              like the "Program in Graphics & Animation" and "Program in Game
-              Design," we have a course tailored for you.
+              Whether you are interested in <b>3D Architectural Design</b>, <b>Video Editing</b>, <b>Game Design</b> , <b>3D Animation</b>, <b>Visual Effects</b>, <b>2D Animation</b>, <b>3D Jewellery Design</b>, <b>Graphics Design</b>, <b>"Program in Graphics & Animation"</b>, <b>"Program in Game Design"</b> we have a course tailored for you.
             </p>
 
             <p className="text-gray-700 dark:text-gray-300 text-lg">

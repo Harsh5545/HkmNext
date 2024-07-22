@@ -62,9 +62,9 @@ function ContactForm() {
     >
       <div className="flex flex-col-reverse md:flex-row">
         <div className="md:flex-1 flex justify-evenly flex-col rounded-xl ">
-          <h3 className="text-white p-5 text-5xl text-center font-bold ">
+          <span className="text-white p-5 text-5xl text-center font-bold ">
             Contact us
-          </h3>
+          </span>
 
           <form
             ref={form}
@@ -147,9 +147,9 @@ function ContactForm() {
           )}
         </div>
         <div className="md:flex-1 flex justify-center flex-col gap-10 items-center text-white py-3 px-4">
-          <h2 className="h2 text-center md:text-xl text-2xl font-bold">
+          <span className="h2 text-center md:text-xl text-2xl font-bold">
             WE'D LOVE TO HEAR FROM YOU
-          </h2>
+          </span>
           <p className="text-justify">
             Fill the form so we can get to know you and your needs better.{" "}
           </p>

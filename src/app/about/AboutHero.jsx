@@ -77,7 +77,7 @@ function AboutHero() {
               data-aos="fade-up"
             >
               Join us on a creative adventure where your ideas come to life. Our
-              team is passionate about turning imagination into reality, and we
+              team is passionate about turning <b>imagination into reality</b>, and we
               can't wait to share this journey with you!
             </p>
           </div>

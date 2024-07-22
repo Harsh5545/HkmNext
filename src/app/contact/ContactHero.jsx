@@ -39,13 +39,13 @@ function ContactHero() {
 
                 <div data-aos="fade-up" className="container px-3 flex justify-center items-center mx-auto">
                     <div className="text-center flex flex-col gap-10">
-                        <p className=" text-2xl md:text-6xl font-bold text-[#e9414d] dark:text-blue-400">
+                        <h1 className=" text-2xl md:text-6xl font-bold text-[#e9414d] dark:text-blue-400">
                             Contact us
-                        </p>
-
-                        <h1 className="mt-2 text-xl font-semibold text-gray-800 md:text-4xl dark:text-white">
-                            We'd love to hear from you
                         </h1>
+
+                        <p className="mt-2 text-xl font-semibold text-gray-800 md:text-4xl dark:text-white">
+                            We'd love to hear from you
+                        </p>
 
                         <p className="mt-3 text-2xl text-gray-500 dark:text-gray-400">
                             Chat to our friendly team.
