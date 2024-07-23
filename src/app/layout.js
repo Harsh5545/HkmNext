@@ -11,6 +11,10 @@ export const metadata = {
         template: "H K M | %s",
     },
     description: "Learn animation techniques and principles in our interactive classes. Get hands-on experience and unleash your creativity!",
+    robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 
