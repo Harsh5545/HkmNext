@@ -29,10 +29,10 @@ const schemaData = {
         "areaServed": "IN"
     },
     "sameAs": [
-        "https://www.facebook.com/harikrushnamultimedia",
+        "https://www.facebook.com/people/Harikrushna-Multimedia-institute/61557294870856/?mibextid=ZbWKwL",
         "https://twitter.com/harikrushnamultimedia",
-        "https://www.linkedin.com/company/harikrushnamultimedia",
-        "https://www.instagram.com/harikrushna_multimedia/"
+        "https://www.instagram.com/harikrushna_multimedia/",
+        
     ],
     "address": {
         "@type": "PostalAddress",
