@@ -47,7 +47,7 @@ function Footer() {
                       className="button btn-2"
                     >
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns="https://www.facebook.com/people/Harikrushna-Multimedia-institute/61557294870856/?mibextid=ZbWKwL"
                         height="1em"
                         viewBox="0 0 448 512"
                         fill="#ff00ff"

@@ -1,6 +1,5 @@
 "use client";
 import ContactForm from "@/components/ContactForm/ContactForm";
-import FAQSection from "@/components/Faq/Faq";
 import AOS from "aos";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -9,6 +8,7 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import Button from "@/components/Button/Button";
 import VerticalCarousel from "@/components/slider/VerticalCarousel";
 import { CourseDetails, coursePage } from "@/helpers/Constant";
+import FaqCourse from "@/components/Faq/FaqCourse";
 
 const page = ({ params }) => {
   const { slug } = params;
@@ -81,12 +81,12 @@ const page = ({ params }) => {
     setCourse(details[0]);
   }, []);
 
-    const calculateRotation = (axis) => {
-        const maxRotation = -10;
-        const rotation =
-        (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
-        return rotation;
-    };
+  const calculateRotation = (axis) => {
+    const maxRotation = -10;
+    const rotation =
+      (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
+    return rotation;
+  };
 
   return (
     <div className=" font-poppins overflow-hidden mx-auto">
@@ -106,9 +106,9 @@ const page = ({ params }) => {
               onMouseMove={handleMouseMove}
               height={600}
               data-aos="fade-down-right"
-              src={course.PngImage}
+              src={course.PngImage || "/default-image.png"}
               className=" "
-              alt={course.alt}
+              alt={course.alt || "default description"}
             />
           </div>
 
@@ -147,9 +147,9 @@ const page = ({ params }) => {
           data-aos="zoom-in-up"
           className="m-10 flex-1 flex justify-between flex-col"
         >
-          <h1 className="md:text-5xl text-3xl text-center font-bold mb-4">
+          <h2 className="md:text-5xl text-3xl text-center font-bold mb-4">
             COURSE HIGHLIGHTS
-          </h1>
+          </h2>
           <ul className="list-disc pl-6">
             {CourseHighlights.map((highlight, index) => (
               <li key={index} className="mb-2 md:text-2xl text-xl">
@@ -163,11 +163,11 @@ const page = ({ params }) => {
           className="flex-1 flex items-center justify-center"
         >
           <Image
-            src={course.HeighletsImage}
+            src={course.HeighletsImage || "/default-image.png"}
             height={600}
             className=" p-5"
             width="600"
-            alt=""
+            alt="harikrishna course highlights"
           />
         </div>
       </div>
@@ -177,16 +177,16 @@ const page = ({ params }) => {
           data-aos="fade-left"
           className="flex justify-center md:w-[60%] w-full"
         >
-          <Image src={course.WULImage} width={800} alt="" height={500} />
+          <Image src={course.WULImage || "/default-image.png"} width={800} alt="what you learn" height={500} />
         </div>
         <div
           data-aos="fade-right"
           className="flex flex-1 flex-col gap-10 justify-center  "
           style={{ color: "white" }}
         >
-          <h1 className="md:text-5xl text-3xl text-center">
+          <h3 className="md:text-5xl text-3xl text-center">
             WHAT YOU'LL LEARN HERE
-          </h1>
+          </h3>
           <ul className=" items-start md:text-3xl text-xl">
             {course?.whatULearn?.map((learn, index) => (
               <li className="mt-1 flex items-center gap-2" key={index}>
@@ -211,9 +211,9 @@ const page = ({ params }) => {
           data-aos="flip-up"
           className="flex-1 items-center flex justify-end flex-col"
         >
-          <h1 className="md:text-5xl font-poppins text-2xl">
+          <h4 className="md:text-5xl font-poppins text-2xl">
             TOOLS & SOFTWARE
-          </h1>
+          </h4>
           <VerticalCarousel />
         </div>
         <div
@@ -241,9 +241,9 @@ const page = ({ params }) => {
           data-aos="flip-left"
           className="md:col-span-1 flex gap-5 justify-center items-center flex-col animate-fadeIn"
         >
-          <h1 className="text-3xl text-center font-poppins">
+          <h5 className="text-3xl text-center font-poppins">
             ELIGIBILITY CRITERIA
-          </h1>
+          </h5>
           <Image
             className="h-[14rem] transition-transform transform duration-500 hover:scale-110"
             width={400}
@@ -262,9 +262,9 @@ const page = ({ params }) => {
           data-aos="flip-right"
           className="md:col-span-1 flex gap-5 justify-center items-center flex-col animate-fadeIn"
         >
-          <h1 className="text-3xl text-center font-poppins ">
+          <h6 className="text-3xl text-center font-poppins ">
             COURSE DURATION
-          </h1>
+          </h6>
           <Image
             className="h-[14rem] transition-transform duration-500 transform hover:scale-110"
             width={400}
@@ -283,9 +283,9 @@ const page = ({ params }) => {
           data-aos="flip-left"
           className="md:col-span-1 flex gap-5 justify-center items-center flex-col animate-fadeIn"
         >
-          <h1 className="text-3xl text-center font-poppins">
+          <span className="text-3xl text-center font-poppins">
             PLACEMENT GUARANTEE
-          </h1>
+          </span>
           <Image
             className="h-[14rem] transition-transform transform  duration-500 hover:scale-110"
             width={400}
@@ -299,13 +299,14 @@ const page = ({ params }) => {
           </p>
         </div>
       </div>
+      <FaqCourse courseName={slug} />
       {/* Contact Form */}
       <div className="flex justify-center ">
         <ContactForm />
       </div>
       {/* SIMILAR COURSE  */}
-      <FAQSection />
-    </div>
+
+    </div >
   );
 };
 

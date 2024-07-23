@@ -13,7 +13,7 @@ const FAQSection = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white">FAQ's</h1>
+        <span className="text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white">FAQ's</span>
 
         <hr className="my-6 border-gray-200 dark:border-gray-700" />
 
@@ -46,7 +46,7 @@ const FAQSection = () => {
                   </svg>
                 )}
 
-                <h1 className="mx-4 text-xl text-gray-700 dark:text-white">{item.question}</h1>
+                <span className="mx-4 text-xl text-gray-700 dark:text-white">{item.question}</span>
               </button>
 
               {expandedItems[index] && (
