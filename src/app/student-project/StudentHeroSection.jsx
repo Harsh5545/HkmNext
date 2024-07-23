@@ -52,7 +52,7 @@ function StudentHeroSection() {
                             <Image data-aos="fade-right"
                                 width={700}
                                 height={400}
-                                className=" h-full lg:max-w-3xl"
+                                
                                 src='/course/StudentProject.webp'
                                 alt="Harikrushna Multimedia Institute Student IMAGE"
                             />
