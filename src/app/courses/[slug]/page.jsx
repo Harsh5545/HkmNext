@@ -106,9 +106,9 @@ const page = ({ params }) => {
               onMouseMove={handleMouseMove}
               height={600}
               data-aos="fade-down-right"
-              src={course.PngImage}
+              src={course.PngImage || "/default-image.png"}
               className=" "
-              alt={course.alt}
+              alt={course.alt || "default description"}
             />
           </div>
 
@@ -163,11 +163,11 @@ const page = ({ params }) => {
           className="flex-1 flex items-center justify-center"
         >
           <Image
-            src={course.HeighletsImage}
+            src={course.HeighletsImage || "/default-image.png"}
             height={600}
             className=" p-5"
             width="600"
-            alt=""
+            alt="harikrishna course highlights"
           />
         </div>
       </div>
@@ -177,7 +177,7 @@ const page = ({ params }) => {
           data-aos="fade-left"
           className="flex justify-center md:w-[60%] w-full"
         >
-          <Image src={course.WULImage} width={800} alt="what you learn" height={500} />
+          <Image src={course.WULImage || "/default-image.png"} width={800} alt="what you learn" height={500} />
         </div>
         <div
           data-aos="fade-right"
@@ -299,7 +299,7 @@ const page = ({ params }) => {
           </p>
         </div>
       </div>
-      <FaqCourse courseName={slug}/>
+      <FaqCourse courseName={slug} />
       {/* Contact Form */}
       <div className="flex justify-center ">
         <ContactForm />
