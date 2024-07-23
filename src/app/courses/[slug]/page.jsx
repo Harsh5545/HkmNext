@@ -177,7 +177,7 @@ const page = ({ params }) => {
           data-aos="fade-left"
           className="flex justify-center md:w-[60%] w-full"
         >
-          <Image src={course.WULImage} width={800} alt="" height={500} />
+          <Image src={course.WULImage} width={800} alt="what you learn" height={500} />
         </div>
         <div
           data-aos="fade-right"
