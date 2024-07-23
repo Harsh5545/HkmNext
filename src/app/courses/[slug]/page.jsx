@@ -81,12 +81,12 @@ const page = ({ params }) => {
     setCourse(details[0]);
   }, []);
 
-    const calculateRotation = (axis) => {
-        const maxRotation = -10;
-        const rotation =
-        (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
-        return rotation;
-    };
+  const calculateRotation = (axis) => {
+    const maxRotation = -10;
+    const rotation =
+      (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
+    return rotation;
+  };
 
   return (
     <div className=" font-poppins overflow-hidden mx-auto">
@@ -299,14 +299,14 @@ const page = ({ params }) => {
           </p>
         </div>
       </div>
- <FaqCourse />
+      <FaqCourse courseName={slug}/>
       {/* Contact Form */}
       <div className="flex justify-center ">
         <ContactForm />
       </div>
       {/* SIMILAR COURSE  */}
-     
-    </div>
+
+    </div >
   );
 };
 

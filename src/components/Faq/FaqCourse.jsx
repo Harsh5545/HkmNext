@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { coursePage } from '../../helpers/Constant';
 
-const FaqCourse = () => {
+const FaqCourse = (props) => {
   const [expandedItems, setExpandedItems] = useState({});
-
+  const { courseName } = props
+  console.log(courseName)
   const handleToggle = (courseId, index) => {
     setExpandedItems((prev) => ({
       ...prev,
@@ -17,7 +18,7 @@ const FaqCourse = () => {
         <span className="text-2xl font-semibold text-gray-800 lg:text-3xl">FAQ's</span>
         <hr className="my-6 border-gray-200" />
 
-        {coursePage.map((course) => (
+        {coursePage?.filter((item) => item?.heading?.toLowerCase() == courseName?.replace(/-/g, " ")).map((course) => (
           <div key={course.id} className="mb-12">
             <h2 className="text-xl font-semibold text-gray-800 lg:text-2xl mb-4">
               {course.heading} FAQs
