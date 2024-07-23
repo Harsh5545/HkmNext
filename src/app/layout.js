@@ -17,32 +17,33 @@ export const metadata = {
 const schemaData = {
     "@context": "http://schema.org",
     "@type": "Organization",
-    "legalName": "Your Company Name",
-    "url": "https://example.com",
-    "description": "A brief description of your company.",
-    "logo": "https://example.com/logo.png",
+    "legalName": "Harikrushna Multimedia Institute",
+    "url": "https://harikrushnamultimedia.com",
+    "description": "Harikrushna Multimedia Institute offers professional training in multimedia and design, fostering creativity and technical expertise.",
+    "logo": "https://harikrushnamultimedia.com/logo.png",
     "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+91-123-456-7890",
+        "telephone": "+91-966-483-3542",
         "contactType": "customer service",
         "contactOption": "TollFree",
         "areaServed": "IN"
     },
     "sameAs": [
-        "https://www.facebook.com/yourcompany",
-        "https://twitter.com/yourcompany",
-        "https://www.linkedin.com/company/yourcompany",
-        "https://www.instagram.com/yourcompany"
+        "https://www.facebook.com/harikrushnamultimedia",
+        "https://twitter.com/harikrushnamultimedia",
+        "https://www.linkedin.com/company/harikrushnamultimedia",
+        "https://www.instagram.com/harikrushna_multimedia/"
     ],
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Street Name",
-        "addressLocality": "City",
-        "addressRegion": "State",
-        "postalCode": "123456",
+        "streetAddress": "Adajan",
+        "addressLocality": "Surat",
+        "addressRegion": "Gujarat",
+        "postalCode": "395009",
         "addressCountry": "IN"
     }
 };
+
 
 export default function RootLayout({ children }) {
     return (
