@@ -59,21 +59,21 @@ function AboutHero() {
         >
           <div className="text-center">
             <p
-              className="text-2xl md:text-6xl font-bold text-[#e9414d] dark:text-blue-400"
+              className="text-2xl md:text-6xl font-bold text-[#e9414d]"
               data-aos="fade-right"
             >
               About us
             </p>
 
             <h1
-              className="mt-2 md:text-4xl text-2xl font-semibold text-gray-800  dark:text-white"
+              className="mt-2 md:text-4xl text-2xl font-semibold text-gray-800"
               data-aos="fade-left"
             >
               Explore the World of Creativity
             </h1>
 
             <p
-              className="mt-3 text-2xl text-gray-500 dark:text-gray-400"
+              className="mt-3 text-2xl text-gray-500 "
               data-aos="fade-up"
             >
               Join us on a creative adventure where your ideas come to life. Our

@@ -556,6 +556,28 @@ export const coursePage = [
       "3D Environment",
     ],
     CertificatePara: "Harikrushna Multimedia Certified Expert in Game Design",
+    faq: [
+      {
+        question: "What skills will I gain from the Game Design course?",
+        answer:
+          "You will acquire skills in 3D modeling, texturing, lighting, rendering, and game design principles. The course covers all aspects necessary to design and develop engaging video games.",
+      },
+      {
+        question: "Is this Game Design course suitable for beginners?",
+        answer:
+          "Yes, this course is designed for both beginners and those with some experience. We cover the fundamentals and advance to more complex topics, making it suitable for all skill levels.",
+      },
+      {
+        question: "What software will be used in the Game Design course?",
+        answer:
+          "The course includes industry-standard software for game design such as Unity, Unreal Engine, and Blender. Detailed information will be provided at the start of the course.",
+      },
+      {
+        question: "Will I receive a certificate upon completion of the Game Design course?",
+        answer:
+          "Yes, you will receive a certification from Harikrushna Multimedia upon successfully completing the course, which acknowledges your skills and knowledge in game design.",
+      },
+    ],
   },
   {
     id: 2,
@@ -578,12 +600,34 @@ export const coursePage = [
     ],
     CertificatePara:
       "Harikrushna Multimedia Certified Expert in 3D JEWELLERY DESIGN",
+    faq: [
+      {
+        question: "What are the main benefits of 3D jewellery design?",
+        answer:
+          "3D jewellery design allows for detailed and realistic visualizations, quicker prototyping, and creative freedom. It also reduces material waste and facilitates easy modifications and collaboration.",
+      },
+      {
+        question: "Do I need prior experience in jewellery design to enroll?",
+        answer:
+          "No prior experience is needed. This course is designed for both beginners and experienced individuals. Basic computer skills and a passion for design will help you succeed.",
+      },
+      {
+        question: "Which tools will be used in the 3D Jewellery Design course?",
+        answer:
+          "The course will cover tools such as Rhino, MatrixGold, and ZBrush, which are commonly used in the jewellery design industry for creating detailed 3D models.",
+      },
+      {
+        question: "Will I get a certification after completing the 3D Jewellery Design course?",
+        answer:
+          "Yes, upon successful completion, you will receive a certification from Harikrushna Multimedia, validating your expertise in 3D jewellery design.",
+      },
+    ],
   },
   {
     id: 3,
-    heading: "3D Architechure",
+    heading: "3D ARCHITECTURE",
     headingPara:
-      "3D architectural visualization is the creation of lifelike 3D representa tions of architectural designs and buildings using software tools. It helps architects, designers, and developers communicate their concepts effectively and present the appearance and features of a structure before construction. It is widely used              in real estate marketing MULEDLA IN and design iterations.",
+      "3D architectural visualization is the creation of lifelike 3D representations of architectural designs and buildings using software tools. It helps architects, designers, and developers communicate their concepts effectively and present the appearance and features of a structure before construction. It is widely used in real estate marketing and design iterations.",
     PngImage: "/course/3DARchitechureimg.webp",
     HeaderImage: "/course/3d-architechure-bg.webp",
     HeighletsImage: "/course/3d-architechure-image.webp",
@@ -599,13 +643,35 @@ export const coursePage = [
       "Exterior Design",
     ],
     CertificatePara:
-      "Harikrushna Multimedia Certified Expert in 3D Architechure",
+      "Harikrushna Multimedia Certified Expert in 3D Architecture",
+    faq: [
+      {
+        question: "What will I learn in the 3D Architecture course?",
+        answer:
+          "The course covers 3D modeling, texturing, lighting, rendering, and visualization techniques specific to architectural design. You will learn how to create realistic and detailed architectural visualizations.",
+      },
+      {
+        question: "Is prior experience in architecture required for this course?",
+        answer:
+          "No, prior architectural experience is not required. The course is designed to teach you the necessary skills from scratch, making it suitable for beginners and those with some background in design.",
+      },
+      {
+        question: "What software will be covered in the 3D Architecture course?",
+        answer:
+          "You will learn to use industry-standard software such as AutoCAD, SketchUp, and 3ds Max, which are essential for creating architectural visualizations and presentations.",
+      },
+      {
+        question: "Will I receive a certification after completing the 3D Architecture course?",
+        answer:
+          "Yes, you will receive a certification from Harikrushna Multimedia, which will highlight your expertise in 3D architectural visualization.",
+      },
+    ],
   },
   {
     id: 4,
     heading: "VIDEO EDITING",
     headingPara:
-      "Video editing is the art of arranging video footage, audio, and effects to create a captivating final video. It includes selecting and trimming clips, adding transitions, titles, and effects, adjusting colors and audio, and rendering the",
+      "Video editing is the art of arranging video footage, audio, and effects to create a captivating final video. It includes selecting and trimming clips, adding transitions, titles, and effects, adjusting colors and audio, and rendering the final product for various platforms.",
     PngImage: "/course/videoPagePNG.webp",
     HeaderImage: "/course/VideoEditingbg.webp",
     HeighletsImage: "/course/videoEditings.webp",
@@ -622,13 +688,35 @@ export const coursePage = [
       "Exporting and Rendering",
       "Editing for Different Platforms",
     ],
-    CertificatePara: "Harikrushna Multimedia Certified Expert in VIDEO EDITING",
+    CertificatePara: "Harikrushna Multimedia Certified Expert in Video Editing",
+    faq: [
+      {
+        question: "What will I learn in the Video Editing course?",
+        answer:
+          "You will learn to edit video footage, organize clips, apply effects, and create polished final videos. The course covers both basic and advanced techniques, including audio editing and color correction.",
+      },
+      {
+        question: "Is prior video editing experience required for this course?",
+        answer:
+          "No prior experience is necessary. The course is designed to teach you video editing from the ground up, making it accessible for beginners as well as those with some experience.",
+      },
+      {
+        question: "Which software will be used in the Video Editing course?",
+        answer:
+          "The course includes instruction on popular video editing software such as Adobe Premiere Pro, Final Cut Pro, and DaVinci Resolve.",
+      },
+      {
+        question: "Will I receive a certification after completing the Video Editing course?",
+        answer:
+          "Yes, you will receive a certification from Harikrushna Multimedia upon successful completion, which validates your skills in video editing.",
+      },
+    ],
   },
-  {
+{
     id: 5,
     heading: "3D ANIMATION",
     headingPara:
-      "3D animation is the process of creating moving images in a three-dimensional (3D) environment, giving the illusion that these digital objects are moving through a 30 space.",
+      "3D animation is the process of creating moving images in a three-dimensional (3D) environment, giving the illusion that these digital objects are moving through a 3D space.",
     PngImage: "/course/3d-animation-overlay.webp",
     HeaderImage: "/course/3d-animation-bg.webp",
     HeighletsImage: "/course/3d-animation-image.webp",
@@ -643,13 +731,35 @@ export const coursePage = [
       "Materials",
       "Realistic Rendering",
     ],
-    CertificatePara: "Harikrushna Multimedia Certified Expert in 3D ANIMATION",
+    CertificatePara: "Harikrushna Multimedia Certified Expert in 3D Animation",
+    faq: [
+      {
+        question: "What will I learn in the 3D Animation course?",
+        answer:
+          "The course covers essential skills in 3D modeling, texturing, lighting, and animation techniques. You'll learn how to create and animate realistic 3D characters and scenes, enhancing your creativity and technical skills.",
+      },
+      {
+        question: "Do I need previous animation experience for this course?",
+        answer:
+          "No prior animation experience is required. This course is designed for beginners as well as those with some experience. We cover both fundamental and advanced animation techniques.",
+      },
+      {
+        question: "Which software will be taught in the 3D Animation course?",
+        answer:
+          "You will learn to use industry-standard software such as Blender, Maya, and 3ds Max for creating 3D animations and visual effects.",
+      },
+      {
+        question: "Is certification provided upon completion of the 3D Animation course?",
+        answer:
+          "Yes, you will receive a certification from Harikrushna Multimedia upon successful completion of the course, recognizing your expertise in 3D animation.",
+      },
+    ],
   },
   {
     id: 6,
     heading: "VISUAL EFFECT",
     headingPara:
-      "Enrolling in the Graphics & Animation course at Harikrushna  Multimedia empowers you to excel in Graphics Design, Motion Graphics, and 3D Animation.",
+      "Enrolling in the Graphics & Animation course at Harikrushna Multimedia empowers you to excel in Graphics Design, Motion Graphics, and 3D Animation.",
     PngImage: "/course/graphics-animation-overlay.webp",
     HeaderImage: "/course/3d-architechure-bg.webp",
     HeighletsImage: "/course/graphics-animation-image.webp",
@@ -663,17 +773,39 @@ export const coursePage = [
       "Texturing and Materials",
       "Rotoscoping",
       "Green Screen (VFX)",
-      "Tital Editing",
-      "Wedding Videso Album",
+      "Title Editing",
+      "Wedding Video Albums",
       "Special Effects",
     ],
-    CertificatePara: "Harikrushna Multimedia Certified Expert in VISUAL EFFECT",
+    CertificatePara: "Harikrushna Multimedia Certified Expert in Visual Effects",
+    faq: [
+      {
+        question: "What are the key skills learned in the Visual Effects course?",
+        answer:
+          "You will master skills such as 3D modeling, digital effects creation, rotoscoping, and green screen techniques. The course covers both practical and creative aspects of visual effects.",
+      },
+      {
+        question: "Is previous experience needed for the Visual Effects course?",
+        answer:
+          "No prior experience is needed. The course is suitable for beginners as well as those with some knowledge of visual effects. We cover the basics and advance to more complex techniques.",
+      },
+      {
+        question: "Which software will be used in the Visual Effects course?",
+        answer:
+          "The course includes training in Adobe After Effects, Autodesk Maya, and Adobe Photoshop for creating and editing visual effects.",
+      },
+      {
+        question: "Will I receive a certification after completing the Visual Effects course?",
+        answer:
+          "Yes, you will receive a certification from Harikrushna Multimedia upon successful completion, which will validate your skills in visual effects.",
+      },
+    ],
   },
   {
     id: 7,
     heading: "2D JEWELLERY DESIGN",
     headingPara:
-      " 2D animation refers to the cre- ation of moving images by displaying a sequence of indi- vidual frames in a two-dimen-sional space. 2D animation is focused on flat, two-dimensional surfaces.",
+      "2D animation refers to the creation of moving images by displaying a sequence of individual frames in a two-dimensional space. 2D animation is focused on flat, two-dimensional surfaces.",
     PngImage: "/course/2d-animation-overlay.webp",
     HeaderImage: "/course/2d-animation-bg.webp",
     HeighletsImage: "/course/2d-animation-image.webp",
@@ -688,14 +820,35 @@ export const coursePage = [
       "Secondary Motion",
       "2D Model Sheet",
     ],
-    CertificatePara:
-      "Harikrushna Multimedia Certified Expert in 2D JEWELLERY DESIGN",
+    CertificatePara: "Harikrushna Multimedia Certified Expert in 2D Jewellery Design",
+    faq: [
+      {
+        question: "What will I learn in the 2D Jewellery Design course?",
+        answer:
+          "The course teaches you storyboarding, frame-by-frame animation, lip-syncing, and creating 2D model sheets. You will develop skills to create detailed and dynamic 2D animations.",
+      },
+      {
+        question: "Do I need any prior experience in animation for this course?",
+        answer:
+          "No prior animation experience is required. The course is designed to guide you from basic to advanced 2D animation techniques.",
+      },
+      {
+        question: "Which tools and software will be covered in the 2D Jewellery Design course?",
+        answer:
+          "You will use tools such as Adobe Animate and Toon Boom Harmony for creating 2D animations. The course includes practical exercises with these industry-standard tools.",
+      },
+      {
+        question: "Will I get a certification after completing the 2D Jewellery Design course?",
+        answer:
+          "Yes, upon successful completion of the course, you will receive a certification from Harikrushna Multimedia, highlighting your proficiency in 2D jewellery design.",
+      },
+    ],
   },
   {
     id: 8,
     heading: "GRAPHICS DESIGN",
     headingPara:
-      " Graphic design is the art of creating visual content to communicate messages effectively. It utilizes typography, images, colors, ads on social media and layout to convey ideas and emotions in a visually appealing way. Graphic design is a craft              where professionals create visual content to communicate Messages.",
+      "Graphic design is the art of creating visual content to communicate messages effectively. It utilizes typography, images, colors, and layout to convey ideas and emotions in a visually appealing way. Graphic design is a craft where professionals create visual content to communicate messages.",
     PngImage: "/course/GraphicPng1.webp",
     HeaderImage: "/course/GraphicBg.webp",
     HeighletsImage: "/course/PlayingGraphic.webp",
@@ -706,17 +859,36 @@ export const coursePage = [
       "Color Theory",
       "Visualization Techniques",
       "Branding and Identity",
-      "Realistic Visualization",
       "Print and Digital Media",
       "Image Manipulation",
     ],
-    CertificatePara:
-      "Harikrushna Multimedia Certified Expert in GRAPHICS DESIGN",
+    CertificatePara: "Harikrushna Multimedia Certified Expert in Graphics Design",
+    faq: [
+      {
+        question: "What will I learn in the Graphics Design course?",
+        answer:
+          "The course covers typography, layout and composition, color theory, branding, and image manipulation. You will gain skills to create effective visual communication for both print and digital media.",
+      },
+      {
+        question: "Is any prior graphic design experience necessary for this course?",
+        answer:
+          "No prior experience is required. The course is designed for both beginners and those with some experience, providing a comprehensive introduction to graphic design principles and techniques.",
+      },
+      {
+        question: "Which software tools will be used in the Graphics Design course?",
+        answer:
+          "You will learn to use Adobe Creative Suite tools such as Photoshop, Illustrator, and InDesign, which are essential for graphic design.",
+      },
+      {
+        question: "Will I receive certification after completing the Graphics Design course?",
+        answer:
+          "Yes, upon successful completion, you will receive a certification from Harikrushna Multimedia, recognizing your skills in graphic design.",
+      },
+    ],
   },
-
-  {
+      {
     id: 9,
-    heading: "Program Graphics & Animation",
+    heading: "PROGRAM GRAPHICS & ANIMATION",
     headingPara:
       "Enrolling in the Graphics & Animation course at Harikrushna Multimedia empowers you to excel in Graphics Design, Motion Graphics, and 3D Animation.",
     PngImage: "/course/WEBSITEpng.webp",
@@ -733,12 +905,10 @@ export const coursePage = [
       "Lighting Artist",
       "Rigging Artist",
       "Social Media Visual Designer",
-
       "Visual Development Artist",
       "Matte Painter",
       "Previsualization Artist",
       "Motion Graphics Animator",
-
       "Social Media Reel Artist",
       "Multimedia Designer",
       "Visual Storyteller",
@@ -746,13 +916,33 @@ export const coursePage = [
       "Technical Animator",
       "Video Editor",
     ],
-    CertificatePara:
-      "Harikrushna Multimedia Certified Expert in Program Graphics & Animation",
+    CertificatePara: "Harikrushna Multimedia Certified Expert in Program Graphics & Animation",
+    faq: [
+      {
+        question: "What does the Program Graphics & Animation course cover?",
+        answer:
+          "This comprehensive course covers a wide range of skills including graphics design, character and background design, digital painting, 3D modeling, animation, and multimedia design. You'll be equipped for various roles in the graphics and animation industry.",
+      },
+      {
+        question: "Do I need any prior experience to join this course?",
+        answer:
+          "No prior experience is required. The course is designed to cater to beginners and those with some experience. You'll start with the basics and advance to more complex techniques.",
+      },
+      {
+        question: "Which software and tools will be taught in the Program Graphics & Animation course?",
+        answer:
+          "The course will introduce you to industry-standard tools such as Adobe Creative Suite (Photoshop, Illustrator, After Effects), Blender, and Maya. These tools are essential for graphics design, animation, and multimedia production.",
+      },
+      {
+        question: "Is certification provided after completing the Program Graphics & Animation course?",
+        answer:
+          "Yes, upon successful completion of the course, you will receive a certification from Harikrushna Multimedia that recognizes your expertise in graphics and animation.",
+      },
+    ],
   },
-
   {
     id: 10,
-    heading: " PROGRAM IN GAME DESIGN",
+    heading: "PROGRAM IN GAME DESIGN",
     headingPara:
       "Enrolling in the Game Design course at Harikrushna Multimedia empowers you to excel in the dynamic fields of Game Development, Interactive Media, and 3D Animation. This immersive program thoroughly familiarizes you with a diverse range of design elements crucial for creating captivating games.",
     PngImage: "/course/PGDPNG.webp",
@@ -763,7 +953,6 @@ export const coursePage = [
       "Game Designer",
       "Level Designer",
       "Game UI Designer",
-
       "Gameplay Tester",
       "Game Artist",
       "3D Modeler",
@@ -775,7 +964,28 @@ export const coursePage = [
       "Game Tester/QA Analyst",
       "Game Writer/Narrative Designer",
     ],
-    CertificatePara:
-      "Harikrushna Multimedia Certified Expert in  PROGRAM IN GAME DESIGN",
+    CertificatePara: "Harikrushna Multimedia Certified Expert in Program in Game Design",
+    faq: [
+      {
+        question: "What are the key topics covered in the Program in Game Design?",
+        answer:
+          "The course covers game design fundamentals, level design, game UI design, 3D modeling, character design, animation, sound design, and game testing. It provides a comprehensive understanding of game development and interactive media.",
+      },
+      {
+        question: "Is prior experience in game design needed for this course?",
+        answer:
+          "No, prior experience is not required. The course is suitable for both beginners and those with some background in game design. It starts with foundational concepts and progresses to more advanced topics.",
+      },
+      {
+        question: "What software will be used in the Program in Game Design course?",
+        answer:
+          "You will work with industry-standard game development tools such as Unity, Unreal Engine, Blender, and various asset creation software. These tools are essential for game design and development.",
+      },
+      {
+        question: "Will I receive a certification upon completing the Program in Game Design?",
+        answer:
+          "Yes, you will receive a certification from Harikrushna Multimedia upon successful completion of the course, which will highlight your skills and knowledge in game design.",
+      },
+    ],
   },
 ];

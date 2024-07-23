@@ -3,16 +3,14 @@ import React from "react";
 function ContactMap() {
   return (
     <div>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white ">
         <div className="container px-6 py-12 mx-auto">
           <div>
-           
-
-            <span className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">
+            <span className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl ">
               Get in touch
             </span>
 
-            <p className="mt-3 text-gray-500 dark:text-gray-400">
+            <p className="mt-3 text-gray-500 ">
               Our friendly team would love to hear from you.
             </p>
           </div>
@@ -20,7 +18,7 @@ function ContactMap() {
           <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
             <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
               <div>
-                <span className="inline-block p-3 text-[#e9414d] font-medium rounded-full bg-blue-100/80 dark:bg-gray-800">
+                <span className="inline-block p-3 text-[#e9414d] font-medium rounded-full bg-blue-100/80 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -37,19 +35,19 @@ function ContactMap() {
                   </svg>
                 </span>
 
-                <p className="mt-4 text-base font-medium text-gray-800 dark:text-white">
+                <p className="mt-4 text-base font-medium text-gray-800 ">
                   Email
                 </p>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                <p className="mt-2 text-sm text-gray-500 ">
                   Our friendly team is here to help.
                 </p>
-                <p className="mt-2 text-sm text-[#e9414d] font-medium dark:text-blue-400">
-                harikrushnamultimedia@gmail.com
+                <p className="mt-2 text-sm text-[#e9414d] font-medium ">
+                  harikrushnamultimedia@gmail.com
                 </p>
               </div>
 
               <div>
-                <span className="inline-block p-3 text-[#e9414d] font-medium rounded-full bg-blue-100/80 dark:bg-gray-800">
+                <span className="inline-block p-3 text-[#e9414d] font-medium rounded-full bg-blue-100/80 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -71,19 +69,21 @@ function ContactMap() {
                   </svg>
                 </span>
 
-                <h4 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
+                <h4 className="mt-4 text-base font-medium text-gray-800 ">
                   Office
                 </h4>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                <p className="mt-2 text-sm text-gray-500 ">
                   Come say hello at our office HQ.
                 </p>
-                <p className="mt-2 text-sm text-[#e9414d] font-medium dark:text-blue-400">
-                Shop No-7, Millenium Arcade, Hazira Rd, below You Broadband, opposite Royal Enfield Showroom, Aahura Nagar Society, Adajan Gam, Adajan, Surat, Gujarat 395009
+                <p className="mt-2 text-sm text-[#e9414d] font-medium ">
+                  Shop No-7, Millenium Arcade, Hazira Rd, below You Broadband,
+                  opposite Royal Enfield Showroom, Aahura Nagar Society, Adajan
+                  Gam, Adajan, Surat, Gujarat 395009
                 </p>
               </div>
 
               <div>
-                <span className="inline-block p-3 text-[#e9414d] font-medium rounded-full bg-blue-100/80 dark:bg-gray-800">
+                <span className="inline-block p-3 text-[#e9414d] font-medium rounded-full bg-blue-100/80 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -100,15 +100,15 @@ function ContactMap() {
                   </svg>
                 </span>
 
-                <h5 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
+                <h5 className="mt-4 text-base font-medium text-gray-800 ">
                   Phone
                 </h5>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                <p className="mt-2 text-sm text-gray-500 ">
                   Mon-sat from 9am to 8pm.
                 </p>
-              
-                <p className="mt-2 text-sm text-[#e9414d] font-medium dark:text-blue-400">
-                +91 9664833542
+
+                <p className="mt-2 text-sm text-[#e9414d] font-medium ">
+                  +91 9664833542
                 </p>
               </div>
             </div>

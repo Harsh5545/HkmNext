@@ -1,6 +1,7 @@
 import React from "react";
 import AboutHero from "./AboutHero";
 import AboutMiddle from "./AboutMiddle";
+// import FAQSection from "@/components/Faq/Faq";
 
 export const metadata = {
   title: "About",
@@ -23,6 +24,7 @@ const page = () => {
     <div>
       <AboutHero />
       <AboutMiddle />
+
     </div>
   );
 };

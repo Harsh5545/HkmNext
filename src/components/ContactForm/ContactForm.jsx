@@ -1,8 +1,10 @@
+// ContactForm.js
 "use client";
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./ContactForm.css";
 import Image from "next/image";
+// import Loader from "../Loader/Loader1"; // Import the Loader component
 
 function ContactForm() {
   const sampleCourseNames = [
@@ -21,6 +23,7 @@ function ContactForm() {
   const [course, setCourse] = useState("");
   const [name, setName] = useState(""); // State for user's name
   const [message, setMessage] = useState(""); // Success message state
+//   const [isLoading, setIsLoading] = useState(false); // Loading state
   const form = useRef();
 
   const handleCourseChange = (e) => {
@@ -33,6 +36,8 @@ function ContactForm() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    // setIsLoading(true); // Start loading.
+
     const serviceId = "service_0krafbr";
     const templateId = "template_61p6zpj";
     const publicKey = "e8m4_SZqHq0uAAXvA";
@@ -45,9 +50,11 @@ function ContactForm() {
         form.current.reset(); // Clear all input fields
         setCourse(""); // Clear course selection
         setName(""); // Clear name input
+        // setIsLoading(false); // Stop loading
       },
       (error) => {
         setMessage("Error sending message. Please try again.");
+        // setIsLoading(false); // Stop loading
       }
     );
   };
@@ -60,9 +67,11 @@ function ContactForm() {
           "linear-gradient(to right, #353777 0%, #3b5998 50%, #0F406D 100%)",
       }}
     >
+       {/* Show loader when loading */}
+
       <div className="flex flex-col-reverse md:flex-row">
-        <div className="md:flex-1 flex justify-evenly flex-col rounded-xl ">
-          <span className="text-white p-5 text-5xl text-center font-bold ">
+        <div className="md:flex-1 flex justify-evenly flex-col rounded-xl">
+          <span className="text-white p-5 text-5xl text-center font-bold">
             Contact us
           </span>
 
@@ -71,41 +80,41 @@ function ContactForm() {
             onSubmit={sendEmail}
             className="text-white flex flex-col items-center"
           >
-            <div className="mb-4 w-[80%] md:w-[60%]">
+            <div className="mb-4  w-[80%] text-black md:w-[60%]">
               <input
                 name="user_name"
-                className="form-control shadow-none w-full p-3 rounded-3xl"
+                className="form-control outline-none shadow-none w-full p-3 rounded-3xl"
                 placeholder="Name"
                 value={name}
                 onChange={handleNameChange}
                 required
               />
             </div>
-            <div className="mb-4 w-[80%] md:w-[60%]">
+            <div className="mb-4 outline-none text-black w-[80%] md:w-[60%]">
               <input
                 name="user_email"
-                className="form-control shadow-none w-full p-3 rounded-3xl"
+                className="form-control outline-none shadow-none w-full p-3 rounded-3xl"
                 placeholder="name@example.com"
                 required
               />
             </div>
-            <div className="mb-4 w-[80%] md:w-[60%]">
+            <div className="mb-4 outline-none text-black w-[80%] md:w-[60%]">
               <input
                 type="tel"
-                className="form-control shadow-none w-full p-3 rounded-3xl"
+                className="form-control outline-none shadow-none w-full p-3 rounded-3xl"
                 name="user_phone"
                 placeholder="Number"
                 required
               />
             </div>
-            <div className="mb-4 cursor-pointer w-[80%] md:w-[60%]">
+            <div className="mb-4 text-gray-500 outline-none cursor-pointer w-[80%] md:w-[60%]">
               <select
                 value={course}
                 name="message"
                 onChange={handleCourseChange}
-                className="form-control-contact cursor-pointer w-full p-3 rounded-3xl"
+                className="form-control-contact outline-none cursor-pointer w-full p-3 rounded-3xl"
               >
-                <option value="" disabled>
+                <option className="text-black" value="" disabled>
                   Select a course
                 </option>
                 {sampleCourseNames.map((courseName, index) => (
@@ -123,12 +132,14 @@ function ContactForm() {
               <button
                 className="btn btn-primary px-3 py-2 text-lg md:w-[60%]"
                 type="submit"
+                // disabled={isLoading} // Disable button while loading
               >
                 SEND
                 <i className="fa fa-arrow-right ms-2" aria-hidden="true"></i>
               </button>
             </div>
           </form>
+            {/* {isLoading && <Loader />} */}
           {message && (
             <div
               className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
