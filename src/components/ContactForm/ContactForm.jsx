@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./ContactForm.css";
 import Image from "next/image";
-// import Loader from "../Loader/Loader1"; // Import the Loader component
+import Loader from "../Loader/Loader1"; // Import the Loader component
 
 function ContactForm() {
   const sampleCourseNames = [
@@ -23,7 +23,7 @@ function ContactForm() {
   const [course, setCourse] = useState("");
   const [name, setName] = useState(""); // State for user's name
   const [message, setMessage] = useState(""); // Success message state
-//   const [isLoading, setIsLoading] = useState(false); // Loading state
+  const [isLoading, setIsLoading] = useState(false); // Loading state
   const form = useRef();
 
   const handleCourseChange = (e) => {
@@ -36,7 +36,7 @@ function ContactForm() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // setIsLoading(true); // Start loading.
+    setIsLoading(true); // Start loading.
 
     const serviceId = "service_0krafbr";
     const templateId = "template_61p6zpj";
@@ -50,11 +50,11 @@ function ContactForm() {
         form.current.reset(); // Clear all input fields
         setCourse(""); // Clear course selection
         setName(""); // Clear name input
-        // setIsLoading(false); // Stop loading
+        setIsLoading(false); // Stop loading
       },
       (error) => {
         setMessage("Error sending message. Please try again.");
-        // setIsLoading(false); // Stop loading
+        setIsLoading(false); // Stop loading
       }
     );
   };
@@ -67,7 +67,7 @@ function ContactForm() {
           "linear-gradient(to right, #353777 0%, #3b5998 50%, #0F406D 100%)",
       }}
     >
-       {/* Show loader when loading */}
+      {/* Show loader when loading */}
 
       <div className="flex flex-col-reverse md:flex-row">
         <div className="md:flex-1 flex justify-evenly flex-col rounded-xl">
@@ -132,14 +132,16 @@ function ContactForm() {
               <button
                 className="btn btn-primary px-3 py-2 text-lg md:w-[60%]"
                 type="submit"
-                // disabled={isLoading} // Disable button while loading
+                disabled={isLoading} // Disable button while loading
               >
                 SEND
                 <i className="fa fa-arrow-right ms-2" aria-hidden="true"></i>
               </button>
             </div>
           </form>
-            {/* {isLoading && <Loader />} */}
+          {isLoading && <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+            style={{ zIndex: 999 }}>
+            <Loader /></div>}
           {message && (
             <div
               className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
