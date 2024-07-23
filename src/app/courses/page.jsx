@@ -2,19 +2,11 @@
 import CourseMiddle from './CourseMiddle';
 import CourseSection from './CourseSection';
 
-
-// export const metadata = {
-//     title: "Courses",
-//     description: "About description",
-//     alternates: {
-//         canonical: "/courses"
-//     }
-// };
 export const metadata = {
-  title: "Course ",
-  description: "Course description",
+  title: "Courses ",
+  description: "Courses description",
   alternates: {
-    canonical: "/Course",
+    canonical: "/Courses",
   },
   keywords: `'3D Architectural Design','Harikrushna Multimedia Institue', 'Video Editing', 'Game Design' , '3D Animation', 'Visual Effects', '2D Animation', '3D Jewellery Design', 'Graphics Design' `,
   openGraph: {
@@ -27,8 +19,6 @@ export const metadata = {
 };
 
 const page = () => {
-
-   
 
     return (
         <>
