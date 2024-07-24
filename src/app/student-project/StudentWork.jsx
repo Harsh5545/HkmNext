@@ -67,12 +67,12 @@ function StudentWork() {
     return (
         <div className="overflow-hidden">
             <div className="flex flex-col my-5 justify-center items-center">
-                <h2
+                <span
                     data-aos="fade-down"
                     className="md:text-4xl text-3xl font-poppins font-bold text-center"
                 >
                     MODELLING - STUDENTS PROJECTS
-                </h2>
+                </span>
                 <div
                     data-aos="fade-left"
                     className="md:grid my-10 md:grid-cols-3 justify-center items-center gap-5 flex-col md:flex-row "

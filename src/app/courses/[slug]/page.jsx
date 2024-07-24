@@ -220,7 +220,7 @@ const page = ({ params }) => {
           data-aos="flip-down"
           className="flex-1 items-center flex gap-2 justify-center flex-col font-poppins"
         >
-          <h1 className="md:text-5xl font-poppins text-2xl">CERTIFICATIONS</h1>
+          <span className="md:text-5xl font-poppins text-2xl">CERTIFICATIONS</span>
           <Image
             src="/course/certificate-medal-transformed.webp"
             width={209}
