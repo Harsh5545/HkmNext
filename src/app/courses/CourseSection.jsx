@@ -17,7 +17,7 @@ useEffect(() => {
     }, []);
 
     const backgroundStyles = {
-        backgroundImage: `url(/assets/imgvfx)`, // Use backticks for string interpolation
+        backgroundImage: `url(/assets/vfx.webp)`, // Use backticks for string interpolation
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         height: "100vh",

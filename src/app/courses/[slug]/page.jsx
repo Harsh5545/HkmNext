@@ -205,7 +205,7 @@ if (typeof window !== "undefined") {
             <Button
               value="Explore Now"
               className="btn"
-              onClick={() => router("/contact")}
+              onClick={() => router.push("/contact")}
             />
           </div>
         </div>
