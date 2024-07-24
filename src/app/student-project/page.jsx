@@ -23,7 +23,7 @@ export const metadata = {
     url: "https://www.harikrushnamultimedia.com/student-project",
     type: "website",
     images:[
-      "https://www.hkmultimedia.com/api/og?title=Hari Krushna Multimedia Student Projects&course=Our Student Projects"
+      "https://www.harikrushnamultimedia.com/api/og?title=Hari Krushna Multimedia Student Projects&course=Our Student Projects"
     ]
   },
   twitter: {
@@ -31,7 +31,7 @@ export const metadata = {
     title: "Hari Krushna Multimedia",
     description: "Learn animation techniques and principles in our interactive classes. Get hands-on experience and unleash your creativity!",
     images: [
-       "https://www.hkmultimedia.com/api/og?title=Hari Krushna Multimedia Student Projects&course=Our Student Projects"
+       "https://www.harikrushnamultimedia.com/api/og?title=Hari Krushna Multimedia Student Projects&course=Our Student Projects"
     ],
   }
 
