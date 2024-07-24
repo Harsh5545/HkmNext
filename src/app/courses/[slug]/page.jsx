@@ -81,11 +81,17 @@ const page = ({ params }) => {
     setCourse(details[0]);
   }, []);
 
+    
+   ;
+
   const calculateRotation = (axis) => {
     const maxRotation = -10;
-    const rotation =
+if (typeof window !== "undefined") {
+     const rotation =
       (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
     return rotation;
+      };
+    
   };
 
   return (
