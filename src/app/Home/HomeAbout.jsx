@@ -22,7 +22,7 @@ function HomeAbout() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 150); // Change 100 to the desired scroll threshold
+      setIsScrolled(window.scrollY > 150); 
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -33,19 +33,12 @@ function HomeAbout() {
 
   return (
     <>
-      {/* <Helmet>
-        <title>Harikrushna Multimedia Institute - Why Choose Us?</title>
-        <meta
-          name="description"
-          content="Discover the reasons to choose Harikrushna Multimedia Institute. Explore our industry-relevant courses and expert faculty. Shape your creative career in animation, VFX, gaming, and more."
-        />
-        {/* Add more meta tags as needed for SEO optimization */}
-      {/* </Helmet> */} 
+     
 
       <div className='mt-40 w-full md:p-10 p-2.5 h-[50]' style={HomeAboutStyles}>
-        <h1 className='font-bold flex justify-center items-center font-poppins text-xl md:text-4xl'>
+        <span className='font-bold flex justify-center items-center font-poppins text-xl md:text-4xl'>
           WHY CHOOSE US ? . . .
-        </h1>
+        </span>
         <div className='md:flex md:items-center flex-col-reverse md:flex-row'>
           <div className='flex-1 mt-10'>
             <ul className=''>
@@ -61,7 +54,7 @@ function HomeAbout() {
             <animated.img
               className='md:h-[40rem] h-[20rem]'
               src='/model/RoboAbout.webp'
-              alt=''
+              alt='Harikrushna Multimedia classes'
               style={trail[WhyChooseUs.length - 1]}
             />
           </div>

@@ -76,9 +76,9 @@ function Footer() {
             <div className="mt-6 lg:mt-0 lg:flex-1">
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
                 <div>
-                  <h3 className="text-gray-700 uppercase dark:text-white">
+                  <span className="text-gray-700 uppercase dark:text-white">
                     Pages
-                  </h3>
+                  </span>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/"
@@ -158,9 +158,9 @@ function Footer() {
                 </div>
 
                 <div>
-                  <h3 className="text-gray-700 uppercase dark:text-white">
+                  <span className="text-gray-700 uppercase dark:text-white">
                     Contact
-                  </h3>
+                  </span>
                   <a
                     href="tel:+919664833542"
                     className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"

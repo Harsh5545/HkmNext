@@ -81,11 +81,17 @@ const page = ({ params }) => {
     setCourse(details[0]);
   }, []);
 
+    
+   ;
+
   const calculateRotation = (axis) => {
     const maxRotation = -10;
-    const rotation =
+if (typeof window !== "undefined") {
+     const rotation =
       (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
     return rotation;
+      };
+    
   };
 
   return (
@@ -199,7 +205,7 @@ const page = ({ params }) => {
             <Button
               value="Explore Now"
               className="btn"
-              onClick={() => router("/contact")}
+              onClick={() => router.push("/contact")}
             />
           </div>
         </div>
@@ -220,7 +226,7 @@ const page = ({ params }) => {
           data-aos="flip-down"
           className="flex-1 items-center flex gap-2 justify-center flex-col font-poppins"
         >
-          <h1 className="md:text-5xl font-poppins text-2xl">CERTIFICATIONS</h1>
+          <span className="md:text-5xl font-poppins text-2xl">CERTIFICATIONS</span>
           <Image
             src="/course/certificate-medal-transformed.webp"
             width={209}

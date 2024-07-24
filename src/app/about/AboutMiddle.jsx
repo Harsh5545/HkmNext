@@ -15,9 +15,9 @@ function AboutMiddle() {
   return (
     <div className="py-16 overflow-hidden bg-gray-100 ">
       <div className="container mx-auto">
-        <h1 className="text-4xl font-bold pb-10 text-[#e9414d] mb-8 text-center">
+        <h5 className="text-4xl font-bold pb-10 text-[#e9414d] mb-8 text-center">
           About Our Institute
-        </h1>
+        </h5>
         <div className="grid grid-cols-1 px-4 md:pl-5 md:grid-cols-2 gap-5 ">
           <div className="md:col-span-1 flex flex-col justify-center m-1">
             <p className="text-gray-700  text-lg">
@@ -59,12 +59,12 @@ function AboutMiddle() {
         </div>
       </div>
       <div className="md:px-10 px-5 md:my-32  my-20 ">
-        <h2 className="text-[#0F406D] my-10 mx-10 font-bold text-2xl md:text-5xl">
+        <span className="text-[#0F406D] my-10 mx-10 font-bold text-2xl md:text-5xl">
           Our Mission <span className="text-[#e9414d] ">& Vision</span>
-        </h2>
+        </span>
         <div style={bgColor} className="md:p-10 p-5 m-5 rounded-3xl text-center grid grid-cols-1 md:grid-cols-2">
           <div className="text-[#fff]">
-            <h1 className="font-bold text-xl md:text-4xl">Our Mission</h1>
+            <h6 className="font-bold text-xl md:text-4xl">Our Mission</h6>
             <p className="md:p-10 p-4 md:text-2xl text-md">
               At <span className="font-medium">Harikrushna Multimedia</span>, we empower students through innovative education, fostering independence and critical thinking.
             </p>

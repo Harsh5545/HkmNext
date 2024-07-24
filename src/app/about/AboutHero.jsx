@@ -58,19 +58,19 @@ function AboutHero() {
           className="container px-3 flex justify-center items-center mx-auto"
         >
           <div className="text-center">
-            <p
+            <h1
               className="text-2xl md:text-6xl font-bold text-[#e9414d]"
               data-aos="fade-right"
             >
               About us
-            </p>
+            </h1>
 
-            <h1
+            <h4
               className="mt-2 md:text-4xl text-2xl font-semibold text-gray-800"
               data-aos="fade-left"
             >
               Explore the World of Creativity
-            </h1>
+            </h4>
 
             <p
               className="mt-3 text-2xl text-gray-500 "

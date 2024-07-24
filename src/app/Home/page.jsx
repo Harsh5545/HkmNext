@@ -26,8 +26,17 @@ export const metadata = {
     description: "Discover the Harikrushna Multimedia Institute, where creativity meets technology. Located in Surat, Gujarat, we offer comprehensive courses in 3D design, animation, and multimedia. Explore our students' work and join us to unlock your creative potential.",
     images: ["/logo.png"],
     url: "https://www.harikrushnamultimedia.com",
+type: "website",
+
     site_name: "Harikrushna Multimedia Institute"
   },
+ twitter: {
+        card: 'summary_large_image',
+        title: "Hari Krushna Multimedia",
+        description: "Learn animation techniques and principles in our interactive classes. Get hands-on experience and unleash your creativity!",
+        images: [],
+}
+
 };
 
 
