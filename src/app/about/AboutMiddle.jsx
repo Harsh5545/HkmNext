@@ -51,7 +51,7 @@ function AboutMiddle() {
           <div className="md:col-span-1 flex justify-center items-center">
             <div className="card w-[24rem] md:w-[31rem] h-[28rem] md:h-[41rem] ">
               <div className="bg w-[25rem] md:w-[30rem] h-[29rem] md:h-[40rem]">
-                <Image src="/course/AboutUs.webp"  alt="About Harikrishna Multimedia" className="h-full" fill/>
+                <Image src="/assets/AboutHkm.webp"  alt="About Harikrishna Multimedia" className="h-full" fill/>
               </div>
               <div className="blob"></div>
             </div>
