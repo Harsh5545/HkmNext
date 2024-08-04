@@ -12,7 +12,7 @@ function Footer() {
 
   return (
     <div>
-      <footer className="bg-white dark:bg-gray-900">
+      <footer className="bg-white ">
         <div className="container p-6 mx-auto">
           <div className="lg:flex">
             <div className="w-full -mx-6 lg:w-2/5">
@@ -21,8 +21,8 @@ function Footer() {
                   <Image width={100} height={100} className="w-auto h-20" src="/assets/logo.png" alt="footer_logo" />
                 </Link>
 
-                <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">
-                  Join <b>31,000+ </b> 31,000+ other and never miss out on new tips, tutorials,
+                <p className="max-w-sm mt-2 text-gray-500 ">
+                  Join <b>12,000+ </b> other and never miss out on new tips, tutorials,
                   and more.
                 </p>
 
@@ -76,104 +76,104 @@ function Footer() {
             <div className="mt-6 lg:mt-0 lg:flex-1">
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
                 <div>
-                  <span className="text-gray-700 uppercase dark:text-white">
+                  <span className="text-gray-700 uppercase ">
                     Pages
                   </span>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/"
-                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-600  hover:underline"
                   >
                     Home
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/about"
-                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-600  hover:underline"
                   >
                     AboutUs
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/student-project"
-                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-600  hover:underline"
                   >
                     Student Project
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/courses"
-                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-600  hover:underline"
                   >
                     Course
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/contact"
-                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-600  hover:underline"
                   >
                     ContactUs
                   </Link>
                 </div>
 
                 <div>
-                  <h2 className="text-gray-700 uppercase dark:text-white">
+                  <h2 className="text-gray-700 uppercase">
                     Courses
                   </h2>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/courses/game-design"
-                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-600  hover:underline"
                   >
                     Game Design
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/courses/3d-animation"
-                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-600  hover:underline"
                   >
                     3D Animation
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/courses/graphics-design"
-                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-600  hover:underline"
                   >
                     Graphics Design
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/courses/3d-architectural"
-                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-600  hover:underline"
                   >
                     3D Architectural
                   </Link>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/courses/video-editing"
-                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-600  hover:underline"
                   >
                     Video Editing
                   </Link>
                 </div>
 
                 <div>
-                  <span className="text-gray-700 uppercase dark:text-white">
+                  <span className="text-gray-700 uppercase">
                     Contact
                   </span>
                   <a
                     href="tel:+919664833542"
-                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-600  hover:underline"
                   >
                     +91 9664833542
                   </a>
                   <a
                     href="https://wa.me/919664833542"
-                    className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                    className="block mt-2 text-sm text-gray-600  hover:underline"
                   >
                     Chat on WhatsApp
                   </a>
-                  <span className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                  <span className="block mt-2 text-sm text-gray-600  hover:underline">
                     harikrushnamultimedia@gmail.com
                   </span>
                 </div>
@@ -181,10 +181,10 @@ function Footer() {
             </div>
           </div>
 
-          <hr className="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
+          <hr className="h-px my-6 bg-gray-200 border-none " />
 
           <div>
-            <p className="text-center text-gray-500 dark:text-gray-400">
+            <p className="text-center text-gray-500 ">
               © Harshad 2024 - Harikrushna Multimedia All rights reserved
             </p>
           </div>

@@ -3,12 +3,12 @@ import TyperWriteComponent from 'typewriter-effect';
 import "./homeStyles.css"
 function TyperWriter() {
   return (
-    <div className='text-2xl'>
+    <div className=' font-poppins font-medium  text-2xl'>
       <TyperWriteComponent
         options={{
           autoStart: true,
           loop: true,
-          delay: 30,
+          delay: 20,
           strings: [
             "Game Design",
             "3D Modeling",
