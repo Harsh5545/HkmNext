@@ -64,7 +64,7 @@ useEffect(() => {
                             Surat, offering dynamic courses to shape your creative career. Our
                             expert faculty provides industry-relevant and employment-oriented
                             training using the latest tools and technologies. Explore our
-                            exciting courses in animation, VFX, gaming, and more.
+                            exciting courses in animation, VFX, gaming and more.
                         </p>
                         <p className="text-xl mb-6 text-white md:visible hidden ">
                             Chase your dream career by enrolling in our courses after

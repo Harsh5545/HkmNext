@@ -1,11 +1,10 @@
 "use client"
 
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useTrail, animated } from 'react-spring';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import './homeStyles.css';
 import { WhyChooseUs } from '../../helpers/Constant';
-
 
 function HomeAbout() {
   const HomeAboutStyles = {
@@ -18,11 +17,12 @@ function HomeAbout() {
   const trail = useTrail(WhyChooseUs.length, {
     opacity: isScrolled ? 1 : 0,
     transform: isScrolled ? 'translateX(0)' : 'translateX(-50px)',
+    config: { mass: 5, tension: 2000, friction: 200 },
   });
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 150); 
+      setIsScrolled(window.scrollY > 150);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -32,35 +32,38 @@ function HomeAbout() {
   }, []);
 
   return (
-    <>
-     
-
-      <div className='mt-40 w-full md:p-10 p-2.5 h-[50]' style={HomeAboutStyles}>
-        <span className='font-bold flex justify-center items-center font-poppins text-xl md:text-4xl'>
-          WHY CHOOSE US ? . . .
-        </span>
-        <div className='md:flex md:items-center flex-col-reverse md:flex-row'>
-          <div className='flex-1 mt-10'>
-            <ul className=''>
-              {trail.map((style, index) => (
-                <animated.li key={index} className='text-sm font-poppins md:text-lg' style={style}>
-                  <KeyboardDoubleArrowRightIcon />
-                  {` ${WhyChooseUs[index]}`}
-                </animated.li>
-              ))}
-            </ul>
-          </div>
-          <div className='flex flex-1 justify-center'>
-            <animated.img
-              className='md:h-[40rem] h-[20rem]'
-              src='/model/RoboAbout.webp'
-              alt='Harikrushna Multimedia classes'
-              style={trail[WhyChooseUs.length - 1]}
-            />
-          </div>
+    <div
+      className="flex flex-col py-6 justify-center items-center w-full h-full min-h-screen mt-40"
+      style={HomeAboutStyles}
+    >
+      <span className="font-bold text-center font-poppins text-xl md:text-4xl mb-10">
+        WHY CHOOSE US? . . .
+      </span>
+      <div className="flex flex-col md:flex-row items-center  justify-between md:justify-center gap-8 w-full">
+        <animated.div className="flex-1 px-1 flex flex-col items-center justify-center gap-4">
+          <ul className="space-y-3">
+            {trail.map((style, index) => (
+              <animated.li
+                key={index}
+                className="text-sm md:text-lg flex items-center font-poppins"
+                style={style}
+              >
+                <KeyboardDoubleArrowRightIcon className="mr-2" />
+                {WhyChooseUs[index]}
+              </animated.li>
+            ))}
+          </ul>
+        </animated.div>
+        <div className="flex-1 flex justify-center ">
+          <animated.img
+            className="w-full  lg:w-2/3 max-h-[40rem] h-auto object-contain"
+            src="/model/RoboAbout.webp"
+            alt="Harikrushna Multimedia classes"
+            style={trail[WhyChooseUs.length - 1]}
+          />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

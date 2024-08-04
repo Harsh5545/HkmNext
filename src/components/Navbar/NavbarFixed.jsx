@@ -52,8 +52,8 @@ function NavbarFixed() {
       animate="animate"
       exit="exit"
       variants={navVariants}
-      className="fixed z-[999] nav top-2 left-1/2 -translate-x-1/2 rounded-xl p-2 flex-col backdrop-blur-lg border justify-around flex md:flex-row items-center"
-      style={{ width: "85%" }}
+      className="fixed z-[999] nav top-2 left-1/2 -translate-x-1/2 rounded-xl px-2 flex-col backdrop-blur-lg border justify-between md:p-2 flex md:flex-row items-center"
+      style={{ width: "75%" }}
     >
       <div className="flex justify-between items-center w-full md:w-0">
         {/* <span className="text-xl">
@@ -65,7 +65,7 @@ function NavbarFixed() {
               src="/assets/logo.png"
               width={100}
               height={100}
-              className="md:max-w-20 max-w-10"
+              className="md:max-w-20 max-w-14"
               alt="Harikrushna Multimedia Institute logo"
             />
           </span>

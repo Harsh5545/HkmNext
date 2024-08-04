@@ -9,19 +9,17 @@ import { useRouter } from "next/navigation";
 function NavbarDefault() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [navInput, setNavInput] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); // State to track scroll position
+  const [isInWhiteSection, setIsInWhiteSection] = useState(true); // State to track background section
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen((prev) => !prev);
     setNavInput((prev) => !prev);
   };
+
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const router = useRouter();
-  // useEffect(() => {
-  //     // Close the mobile menu when switching from desktop to mobile view
-  //     if (isMobile) {
-  //       setMobileMenuOpen(false);
-  //     }
-  //   }, [isMobile]);
+
   useEffect(() => {
     if (!isMobile) {
       setMobileMenuOpen(false);
@@ -29,17 +27,62 @@ function NavbarDefault() {
     }
   }, [isMobile]);
 
+  useEffect(() => {
+    // Set up Intersection Observer to track sections
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInWhiteSection(entry.isIntersecting);
+      },
+      { threshold: 0.5 }
+    );
+
+    // Observe the target element (the white background section)
+    const target = document.getElementById("white-background-section");
+    if (target) {
+      observer.observe(target);
+    }
+
+    // Clean up observer on component unmount
+    return () => {
+      if (target) {
+        observer.unobserve(target);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    // Event listener to track scroll position for styling
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Determine navbar styles based on scroll and section position
+  const navbarStyles = `flex z-[999] absolute w-full justify-center items-center ${
+    isScrolled && !isInWhiteSection ? "navbar-dark" : "navbar-light"
+  }`;
+
   return (
-    <div className="flex z-[999] absolute w-full justify-center items-center ">
-      <div className="flex-col md:flex-row flex justify-between px-1 md:px-10 rounded-md w-[90%]  items-center backdrop-filter backdrop-blur-md bg-white py-1 mt-4 ">
-        <div className="flex justify-between  items-center w-full md:w-0">
+    <div className={navbarStyles}>
+      <div className="flex-col md:flex-row flex justify-between px-1 md:px-10 rounded-md w-[90%] items-center backdrop-filter backdrop-blur-md bg-white py-1 mt-4 ">
+        <div className="flex justify-between items-center w-full md:w-0">
           <Link href="/" passHref>
             <span className="text-xl cursor-pointer">
               <Image
                 src="/assets/logo.png"
-                width={100}
-                height={100}
-                className="md:max-w-[6rem] max-w-[6rem]"
+                width={110}
+                height={110}
+                className="md:max-w-[8rem] max-w-[6rem]"
                 alt="Harikrushna Multimedia Institute logo"
               />
             </span>
@@ -65,8 +108,9 @@ function NavbarDefault() {
         <div className="flex flex-col items-start">
           <div>
             <ul
-              className={`flex flex-col md:flex-row font-poppins items-center gap-8 md:gap-4 h-[20rem] md:h-0 justify-center text-black font-medium font-jakarta ${isMobileMenuOpen ? "block" : "hidden"
-                } md:flex`}
+              className={`flex flex-col md:flex-row font-poppins items-center gap-8 md:gap-4 h-[20rem] md:h-0 justify-center text-black font-medium font-jakarta ${
+                isMobileMenuOpen ? "block" : "hidden"
+              } md:flex`}
             >
               <li>
                 <Link
@@ -109,13 +153,13 @@ function NavbarDefault() {
         </div>
 
         <div
-          className={`${isMobileMenuOpen ? "block" : "hidden"
-            } md:flex gap-2 flex-col-reverse md:flex-row items-center justify-center`}
+          className={`${
+            isMobileMenuOpen ? "block" : "hidden"
+          } md:flex gap-2 flex-col-reverse md:flex-row items-center justify-center`}
         >
           <Button
             value={"Free Consultation"}
-            className="
-              buttonn p-1"
+            className="buttonn p-1"
             onClick={() => {
               router.push("/contact");
               toggleMobileMenu();
