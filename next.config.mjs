@@ -11,8 +11,8 @@ const nextConfig = {
                     },
                     {
                         key: 'Content-Security-Policy',
-                        value: "default-src 'self'; script-src 'self' 'unsafe-inline'; object-src 'none'; frame-ancestors 'none';",
-                    },
+                        value: "default-src 'self'; script-src https: 'strict-dynamic' 'nonce-EqxClAGdi48BwIDl4zohRAnv1glTnQNo4slbnJEEpHQ'; object-src 'none'; frame-ancestors 'none';"
+                    },                    
                     {
                         key: 'X-Content-Type-Options',
                         value: 'nosniff',
