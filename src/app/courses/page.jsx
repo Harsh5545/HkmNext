@@ -17,7 +17,7 @@ export const metadata = {
     title: "HKM - Courses",
     description: "Welcome to Harikrushna Multimedia Institute, located in Surat, Gujarat. We take pride in offering a diverse range of creative courses that empower aspiring individuals in the fields of multimedia, animation, and design. Our Location is Harikrushna Multimedia Institute, Shop No-7, Millenium Arcade, Hazira Rd, below You Broadband, opposite Royal Enfield Showroom, Aahura Nagar Society, Adajan Gam, Adajan, Surat, Gujarat 395009",
     keywords: `'3D Architectural Design', 'Video Editing', 'Game Design' , '3D Animation', 'Visual Effects', '2D Animation', '3D Jewellery Design', 'Graphics Design'`,
-    images:[
+    images: [
       "https://www.harikrushnamultimedia.com/api/og?title=Hari Krushna Multimedia | Courses&course=Our Courses"
     ],
     url: "https://www.harikrushnamultimedia.com/courses",
