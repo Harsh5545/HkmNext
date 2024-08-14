@@ -5,10 +5,10 @@ const nextConfig = {
             {
                 source: '/(.*)',
                 headers: [
-                    {
-                        key: 'Strict-Transport-Security',
-                        value: 'max-age=63072000; includeSubDomains; preload',
-                    },                    
+                    // {
+                    //     key: 'Strict-Transport-Security',
+                    //     value: 'max-age=63072000; includeSubDomains; preload',
+                    // },                    
                     // {
                     //     key: 'X-Content-Type-Options',
                     //     value: 'nosniff',
@@ -21,10 +21,10 @@ const nextConfig = {
                     //     key: 'X-XSS-Protection',
                     //     value: '1; mode=block',
                     // },
-                    {
-                        key: 'Referrer-Policy',
-                        value: 'no-referrer',
-                    },
+                    // {
+                    //     key: 'Referrer-Policy',
+                    //     value: 'no-referrer',
+                    // },
                     {
                         key: 'Cache-Control',
                         value: 'public, max-age=31536000, immutable',
