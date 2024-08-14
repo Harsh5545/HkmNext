@@ -1,10 +1,10 @@
+'use client'
 import React, { useState } from 'react';
 import { coursePage } from '../../helpers/Constant';
 
 const FaqCourse = (props) => {
   const [expandedItems, setExpandedItems] = useState({});
   const { courseName } = props
-  console.log(courseName)
   const handleToggle = (courseId, index) => {
     setExpandedItems((prev) => ({
       ...prev,

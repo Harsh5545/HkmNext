@@ -3,10 +3,10 @@ import CourseMiddle from './CourseMiddle';
 import CourseSection from './CourseSection';
 
 export const metadata = {
-  title: "Courses ",
+  title: "Courses",
   description: "Courses description",
   alternates: {
-    canonical: "/Courses",
+    canonical: "/courses",
   },
   robots: {
     index: true,

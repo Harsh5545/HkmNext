@@ -60,7 +60,6 @@ function HomeReview() {
                 src={currentTestimonial.photo}
                 alt="Harikrushna Multimedia"
                 effect="blur" // Lazy load effect
-                placeholderSrc="/path/to/placeholder.jpg" // Optional: Path to a placeholder image
               />
 
               <div className="mt-8 flex flex-col gap-2 lg:px-10 lg:mt-0">
