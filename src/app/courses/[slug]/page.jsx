@@ -81,17 +81,17 @@ const page = ({ params }) => {
     setCourse(details[0]);
   }, []);
 
-    
-   ;
+
+  ;
 
   const calculateRotation = (axis) => {
     const maxRotation = -10;
-if (typeof window !== "undefined") {
-     const rotation =
-      (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
-    return rotation;
-      };
-    
+    if (typeof window !== "undefined") {
+      const rotation =
+        (mousePosition[axis] / window.innerWidth - 1) * maxRotation;
+      return rotation;
+    };
+
   };
 
   return (
@@ -134,14 +134,6 @@ if (typeof window !== "undefined") {
             >
               {course.headingPara}{" "}
             </p>{" "}
-            {/* <p
-                            className="invisible md:visible text-md md:text-xl w-[90%]"
-                            style={{ color: "white" }}
-                        >
-                            This is done by using computer software to create and manipulate
-                            digital objects, or by MUL DIA INS using specialized hardware such
-                            as motion capture.
-                        </p>{" "} */}
           </div>
         </div>
       </div>
