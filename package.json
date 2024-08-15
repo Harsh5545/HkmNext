@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && copy && cleanup",
-    "copy": "mv ./.next/static ./.next/standalone/; cp -r ./public ./.next/standalone/",
-    "cleanup": "rm -r node_modules",
+    "build": "next build && npm run copy && npm run cleanup",
+    "copy": "mv ./.next/static ./.next/standalone/ && cp -r ./public ./.next/standalone/",
+    "cleanup": "rm -rf node_modules",
     "start": "next start -p 3030",
     "lint": "next lint"
   },
