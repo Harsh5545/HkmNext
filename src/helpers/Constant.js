@@ -89,7 +89,7 @@ export const slides = [
 ];
 
 export const WhyChooseUs = [
-  "ONE COMPUTER TO ONE STUDENT WITH ONE INSTRUCTOR. ( 1: 4 ratio)",
+  "One computer to one Student with one Instructor.",
   "100% Placement Assistance",
   "Session wise teaching, hence no monthly or yearly bounded courses.",
   "Personal Counseling.",
@@ -473,7 +473,7 @@ export const faqData = [
   {
     question: "What courses does Harikrushna Multimedia offer?",
     answer:
-      "Harikrushna Multimedia offers a range of courses to ignite your creative passions and equip you with industry-leading skills. Some of our courses include 3D ARCHITECTURAL, VIDEO EDITING, GAME DESIGN, 3D ANIMATION, VISUAL EFFECT, and 2D ANIMATION.",
+      "Harikrushna Multimedia offers a range of courses to ignite your creative passions and equip you with industry-leading skills. Some of our courses include 3D Architectural, Video Editing, Game Design, 3D Animation, Visual Effect, and 2D Animation.",
   },
   {
     question: "Can I enroll in multiple courses simultaneously?",
@@ -485,55 +485,51 @@ export const faqData = [
 ];
 
 export const testimonialsData = [
+  
   {
     id: 1,
-    name: "Harsh Jaiswal",
-    photo: "/course/BouStudent1.webp",
-    contentHeading: "Excellent Teaching Style",
-    content:
-      "I am extremely happy with the classes at Harikrushna Multimedia Institute. The teaching style is excellent, and the practical approach helped me grasp concepts easily.",
-  },
-  {
-    id: 2,
-    name: "Ajay Sharma",
-    photo: "/course/BoyStudent.webp",
+    name: "Deep Patel",
+    photo: "/assets/contact1.jpg",
     contentHeading: "Highly Supportive Faculty",
     content:
-      "The faculty members are highly knowledgeable and supportive. They go the extra mile to ensure that every student understands the topics thoroughly.",
+      "The faculty members at Harikrushna Multimedia Institute are highly knowledgeable and supportive. They go the extra mile to ensure that every student understands the topics thoroughly. For anyone looking for the best multimedia courses in Surat Adajan, this institute is the top choice.",
+  },
+{
+    id: 2,
+    name: "Divan Sangale",
+    photo: "/assets/DivanSahebHKM.webp",
+    contentHeading: "Excellent Teaching Style",
+    content:
+      "I am extremely happy with the classes at Harikrushna Multimedia Institute in Surat Adajan. The teaching style is excellent, and the practical approach helped me grasp concepts easily. Harikrushna Multimedia Institute is undoubtedly the best place to learn multimedia skills.",
   },
   {
     id: 3,
-    name: "Deepali Anare",
-    photo: "/course/GirlStudent1.webp",
+    name: "Manasi Patel",
+    photo: "/assets/hkmgirl.jpg",
     contentHeading: "Wonderful Learning Experience",
     content:
-      "Attending classes here has been a wonderful experience. The projects are challenging, and the guidance provided by the instructors is invaluable.",
+      "Attending classes at Harikrushna Multimedia Institute has been a wonderful experience. The projects are challenging, and the guidance provided by the instructors is invaluable. If you're in Surat Adajan and want to excel in multimedia, this is the place to be.",
   },
+ 
+  
   {
     id: 4,
-    name: "Lokesh Narkhede",
-    photo: "/course/BoyStudent2.webp",
-    contentHeading: "Friendly and Encouraging Atmosphere",
+    name: "Harshad Kajale",
+    photo: "/course/BouStudent3.webp",
+    contentHeading: "Hands-On Approach to Learning",
     content:
-      "The friendly and encouraging atmosphere at Harikrushna Multimedia Institute makes learning enjoyable. I recommend this institute to anyone interested in multimedia courses.",
+      "I appreciate the hands-on approach to learning at Harikrushna Multimedia Institute. The industry-relevant curriculum prepares students for real-world challenges, making them job-ready. If you're in Surat Adajan and seeking the best multimedia courses, this institute should be your top pick.",
   },
-  {
+{
     id: 5,
     name: "Manasi Kadam",
     photo: "/course/manasiKadam.png",
     contentHeading: "Emphasis on Practical Skills",
     content:
-      "The institute's emphasis on practical skills not only sets it apart but also enhances employability. The placement assistance provided after completing the course is a significant advantage for graduates seeking career opportunities.",
-  },
-  {
-    id: 6,
-    name: "Harshad Kajale",
-    photo: "/course/BouStudent3.webp",
-    contentHeading: "Hands-On Approach to Learning",
-    content:
-      "I appreciate the hands-on approach to learning. The industry-relevant curriculum prepares students for real-world challenges, making them job-ready.",
+      "The institute's emphasis on practical skills not only sets it apart but also enhances employability. The placement assistance provided after completing the course is a significant advantage for graduates seeking career opportunities. Harikrushna Multimedia Institute in Surat Adajan is the best choice for anyone looking to build a successful career in multimedia.",
   },
 ];
+
 
 export const coursePage = [
   {

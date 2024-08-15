@@ -5,9 +5,10 @@ import Button from "../../components/Button/Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function StudentHeroSection() {
-
+ const router = useRouter();
     useEffect(() => {
         AOS.init({
             duration: 800,
@@ -42,7 +43,7 @@ function StudentHeroSection() {
                                     <Button
                                         data-aos="fade-down"
                                         className="btn text-2xl p-1"
-                                        onClick={() => toNavigate("/contact")}
+                                        onClick={() => router.push("/contact")}
                                         value={"Explore Now"}
                                     />
                                 </div>

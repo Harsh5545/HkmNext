@@ -4,6 +4,7 @@
 import AOS from 'aos';
 import React, { useEffect } from 'react'
 import "aos/dist/aos.css";
+import Image from 'next/image';
 
 
 const CourseSection = () => {
@@ -16,7 +17,7 @@ useEffect(() => {
     }, []);
 
     const backgroundStyles = {
-        backgroundImage: `url(/assets/imgvfx)`, // Use backticks for string interpolation
+        backgroundImage: `url(/assets/vfx.webp)`, // Use backticks for string interpolation
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         height: "100vh",
@@ -44,10 +45,10 @@ useEffect(() => {
                 <div style={bgOverlayStyle}></div>
                 <div className="flex flex-col  md:flex-row justify-end md:justify-center items-center">
                     <div className=" w-[80%] relative">
-                        <img
+                        <Image width={700} height={200}
                             data-aos="fade-left"
                             className="m-1 shadow-gray-800"
-                            src="./model/Graphic-Design.webp"
+                            src="/model/Graphic-Design.webp"
                             alt="Graphic Design Course images"
                         />
                     </div>
@@ -63,7 +64,7 @@ useEffect(() => {
                             Surat, offering dynamic courses to shape your creative career. Our
                             expert faculty provides industry-relevant and employment-oriented
                             training using the latest tools and technologies. Explore our
-                            exciting courses in animation, VFX, gaming, and more.
+                            exciting courses in animation, VFX, gaming and more.
                         </p>
                         <p className="text-xl mb-6 text-white md:visible hidden ">
                             Chase your dream career by enrolling in our courses after

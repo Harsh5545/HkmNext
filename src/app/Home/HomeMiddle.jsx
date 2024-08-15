@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import Image from "next/image";
 
 function HomeMiddle() {
   useEffect(() => {
@@ -36,10 +37,10 @@ function HomeMiddle() {
           data-aos="fade-up"
           className="overflow-hidden md:p-8 p-4 flex md:justify-between md:flex-row flex-col md:items-center w-full"
         >
-          <h2 className="md:text-4xl text-2xl">
+          <span className="md:text-4xl text-2xl">
             Explore
             <p className="font-extrabold">Our Popular Courses</p>
-          </h2>
+          </span>
           <Link
             href="/courses"
             className="hover:scale-110 hover:text-blue-500 transition-transform"
@@ -60,16 +61,16 @@ function HomeMiddle() {
               key={index}
               data-aos="fade-right"
             >
-              <img
+              <Image width={300} height={300}
                 src={course.image}
                 alt={course.alt}
-                style={{ height: "15rem" }}
+                // style={{ height: "15rem" }}
                 className={`transition-transform duration-300 transform hover:scale-95 hover:-translate-y-2 hover:rotate-x-12 hover:rotate-y-12 homeMiddleImg${index}`}
               />
-              <h3 className="font-semibold md:text-2xl text-xl font-poppins">
+              <span className="font-semibold md:text-3xl text-xl font-poppins">
                 {course.course}
-              </h3>
-              <p className="font-poppins">{course.description}</p>
+              </span>
+              <p className="font-poppins md:text-lg text-base">{course.description}</p>
               <Link href="/courses">
                 <Button
                   value={course.buttonText}
@@ -96,9 +97,9 @@ function HomeMiddle() {
                     style={{ height: "15rem" }}
                     className={`transition-transform duration-300 mx-auto transform hover:scale-95 flex items-center hover:-translate-y-2 hover:rotate-x-12 hover:rotate-y-12 homeMiddleImg${index}`}
                   />
-                  <h3 className="font-semibold md:text-2xl text-xl font-poppins">
+                  <span className="font-semibold md:text-2xl text-xl font-poppins">
                     {course.course}
-                  </h3>
+                  </span>
                   <p className="font-poppins">{course.description}</p>
                   <Link href="/courses">
                     <Button

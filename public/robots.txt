@@ -1,0 +1,10 @@
+User-Agent: Googlebot
+Disallow: /private/
+
+User-Agent: Bingbot
+Disallow: /private/
+
+User-Agent: *
+Disallow: /private/
+
+Sitemap: https://www.harikrushnamultimedia.com/sitemap.xml

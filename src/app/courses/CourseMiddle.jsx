@@ -8,6 +8,7 @@ import "./Course.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
+import Image from "next/image";
 
 
 const CourseMiddle = () => {
@@ -32,13 +33,13 @@ const CourseMiddle = () => {
             className="flex m-5 flex-col items-center justify-center"
             data-aos={course.id % 2 ? "fade-right" : "fade-left"}
           >
-            <img
+            <Image
               src={course.path}
-              width={500}
+              width={500} height={300}
               className="rounded-lg aspect-video object-fill shadow-xl"
               alt={course.alt}
             />
-            <h1 className="m-2 md:text-3xl text:2xl ">{course.course}</h1>
+            <span className="m-2 md:text-3xl text:2xl ">{course.course}</span>
             <p className="p-1 md:w-[60%] text-center mb-5 md:text-lg text-sm">
               {course.description}
             </p>
