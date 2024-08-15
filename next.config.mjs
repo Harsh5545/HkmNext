@@ -1,77 +1,43 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-    assetPrefix: process.env.NODE_ENV === "production" ? "https://www.harikrushnamultimedia.com/" : undefined,
-    // async headers() {
-    //     return [
-
-    //         {
-    //             source: '/(.*)',
-    //             headers: [
-    //                 {
-    //                     key: 'Access-Control-Allow-Origin',
-    //                     value: '*',
-    //                 },
-    //                 {
-    //                     key: 'Referrer-Policy',
-    //                     value: 'no-referrer'
-    //                 },
-    //                 {
-    //                     key: 'Strict-Transport-Security',
-    //                     value: 'max-age=63072000; includeSubDomains; preload',
-    //                 },
-    //                 {
-    //                     key: 'Cache-Control',
-    //                     value: 'public, max-age=31536000, immutable',
-    //                 },
-    //                 {
-    //                     key: 'Access-Control-Allow-Methods',
-    //                     value: 'GET, POST, PUT, OPTIONS',
-    //                 },
-    //                 {
-    //                     key: 'X-DNS-Prefetch-Control',
-    //                     value: 'on'
-    //                 }
-    //             ],
-    //         },
-    //         {
-    //             source: '/:path*', // Apply headers to all routes
-    //             headers: [
-    //                 {
-    //                     key: 'Access-Control-Allow-Origin',
-    //                     value: '*', // Allow all origins
-    //                 },
-    //                 {
-    //                     key: 'Access-Control-Allow-Methods',
-    //                     value: 'GET,HEAD,OPTIONS', // Allowed HTTP methods
-    //                 },
-    //                 {
-    //                     key: 'Access-Control-Allow-Headers',
-    //                     value: 'Content-Type', // Allowed headers
-    //                 },
-    //             ],
-    //         },
-    //     ];
-    // },
+    assetPrefix: process.env.NODE_ENV === "production" ? "." : undefined,
 
     async headers() {
-        if (process.env.NODE_ENV !== 'production') {
-            return [];
-        }
-    
         return [
             {
-                source: '/:all*(css|js|gif|svg|jpg|jpeg|png|woff|woff2)',
-                locale: false,
+                source: '/(.*)',
                 headers: [
                     {
+                        key: 'Strict-Transport-Security',
+                        value: 'max-age=63072000; includeSubDomains; preload',
+                    },
+                    {
+                        key: 'X-Content-Type-Options',
+                        value: 'nosniff',
+                    },
+                    {
+                        key: 'X-Frame-Options',
+                        value: 'SAMEORIGIN',
+                    },
+                    {
+                        key: 'X-XSS-Protection',
+                        value: '1; mode=block',
+                    },
+                    {
+                        key: 'Referrer-Policy',
+                        value: 'no-referrer',
+                    },
+                    {
                         key: 'Cache-Control',
-                        value: 'public, max-age=31536000',
-                    }
+                        value: 'public, max-age=31536000, immutable',
+                    },
                 ],
-            }
+            },
         ];
-    }
+    },
+
+
 };
 
 export default nextConfig;
