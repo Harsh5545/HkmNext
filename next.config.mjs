@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-    assetPrefix: process.env.NODE_ENV === "production" ? "/.next/" : undefined,
+    assetPrefix: process.env.NODE_ENV === "production" ? "https://www.harikrushnamultimedia.com/" : undefined,
     // async headers() {
     //     return [
 
