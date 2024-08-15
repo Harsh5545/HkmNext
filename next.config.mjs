@@ -33,6 +33,27 @@ const nextConfig = {
     //         },
     //     ];
     // },
+    async headers() {
+    return [
+      {
+        source: '/:path*', // Apply headers to all routes
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*', // Allow all origins
+          },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET,HEAD,OPTIONS', // Allowed HTTP methods
+          },
+          {
+            key: 'Access-Control-Allow-Headers',
+            value: 'Content-Type', // Allowed headers
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
