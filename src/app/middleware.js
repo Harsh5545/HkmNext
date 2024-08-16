@@ -1,22 +1,38 @@
 import { NextResponse } from 'next/server';
 
-export function middleware(request: Request) {
+const allowedOrigins = [
+   'https://googleads.g.doubleclick.net/pagead/id',
+   'http://webcache.googleusercontent.com',
+   'https://www.youtube.com',
+   'https://play.google.com/log?format=json&hasfast=true&authuser=0',
+   
+];
+
+export function middleware(request) {
     const response = NextResponse.next();
 
-    // Set CORS headers
-    response.headers.set('Access-Control-Allow-Origin', '*'); // Allow all origins
-    response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS'); // Allow these methods
-    response.headers.set('Access-Control-Allow-Headers', 'Content-Type'); // Allow these headers
-    
+    // Extract the Origin header from the request
+    const origin = request.headers.get('origin');
+
+    // Set CORS headers if the Origin header is present
+    if (origin && allowedOrigins.includes(origin)) {
+        response.headers.set('Access-Control-Allow-Origin', origin);
+        response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+        response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
+    } else {
+        // Optionally handle disallowed origins
+        // response.headers.set('Access-Control-Allow-Origin', ''); // or send a 403 response
+    }
+
     // Set caching headers
-    response.headers.set('Cache-Control', 'public, max-age=31536000, immutable'); // Enable caching
+    response.headers.set('Cache-Control', 'public, max-age=31536000, immutable');
 
     // Handle preflight OPTIONS requests
     if (request.method === 'OPTIONS') {
         return new Response(null, {
             status: 204, // No Content
             headers: {
-                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Origin': origin || '*', // Allow origin or fallback
                 'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
                 'Access-Control-Allow-Headers': 'Content-Type',
             },
@@ -26,7 +42,6 @@ export function middleware(request: Request) {
     return response;
 }
 
-// Apply middleware to all paths
 export const config = {
-    matcher: '/(.*)', // Apply middleware to all routes
+    matcher: '/(.*)', 
 };
