@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
 
 const allowedOrigins = [
-   'https://googleads.g.doubleclick.net/pagead/id',
-   'http://webcache.googleusercontent.com',
-   'https://www.youtube.com',
-   'https://play.google.com/log?format=json&hasfast=true&authuser=0',
+    'https://googleads.g.doubleclick.net',
+    'http://webcache.googleusercontent.com',
+    'https://www.youtube.com',
+    'https://play.google.com',
 
 ];
 
