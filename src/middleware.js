@@ -5,6 +5,7 @@ const allowedOrigins = [
     'http://webcache.googleusercontent.com',
     'https://www.youtube.com',
     'https://play.google.com',
+    'https://cdnjs.cloudflare.com'
 ];
 
 export function middleware(request) {
