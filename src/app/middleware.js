@@ -18,7 +18,6 @@ export function middleware(request) {
     if (origin && allowedOrigins.includes(origin)) {
         response.headers.set('Access-Control-Allow-Origin', origin);
         response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-        response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
     } 
 
     // Set caching headers
@@ -31,7 +30,6 @@ export function middleware(request) {
             headers: {
                 'Access-Control-Allow-Origin': origin || '*', // Allow origin or fallback
                 'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-                'Access-Control-Allow-Headers': 'Content-Type',
             },
         });
     }
