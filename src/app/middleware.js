@@ -5,7 +5,7 @@ const allowedOrigins = [
    'http://webcache.googleusercontent.com',
    'https://www.youtube.com',
    'https://play.google.com/log?format=json&hasfast=true&authuser=0',
-   
+
 ];
 
 export function middleware(request) {
@@ -19,10 +19,7 @@ export function middleware(request) {
         response.headers.set('Access-Control-Allow-Origin', origin);
         response.headers.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
         response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
-    } else {
-        // Optionally handle disallowed origins
-        // response.headers.set('Access-Control-Allow-Origin', ''); // or send a 403 response
-    }
+    } 
 
     // Set caching headers
     response.headers.set('Cache-Control', 'public, max-age=31536000, immutable');
