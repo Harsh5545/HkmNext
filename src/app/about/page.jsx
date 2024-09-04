@@ -9,10 +9,7 @@ export const metadata = {
   alternates: {
     canonical: "/about",
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: "index, follow, cache, archive",
   keywords: `'3D Architectural Design','Harikrushna Multimedia Institue', 'Video Editing', 'Game Design' , '3D Animation', 'Visual Effects', '2D Animation', '3D Jewellery Design', 'Graphics Design' `,
   openGraph: {
     title: "HKM - About",

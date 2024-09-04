@@ -40,7 +40,7 @@ const nextConfig = {
                     },
                     {
                         key: 'Cache-Control',
-                        value: 'public, max-age=31536000, immutable',
+                        value: 'public, max-age=36000',
                     },
                     {
                         key: 'Content-Security-Policy',

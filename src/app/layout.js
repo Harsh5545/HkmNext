@@ -12,13 +12,8 @@ export const metadata = {
     },
     description: "Harikrushna Multimedia Institute, located in Surat, is renowned for being one of the top 10 institutes offering expert courses in animation, VFX, game design, and jewelry design. Our experienced faculty provides industry-leading education at affordable prices, ensuring fixed job placements for graduates. Discover the best classes in Surat and unleash your creativity with practical, hands-on training tailored for your career success.",
     keywords: "best classes in Surat, animation courses Surat, VFX training Surat, game design classes Surat, jewelry design courses Surat, top 10 institutes in Surat, affordable multimedia courses, Harikrushna Multimedia Institute, fixed job placement, Surat education",
-    alternates: {
-        canonical: "/",
-    },
-    robots: {
-        index: true,
-        follow: true,
-    },
+    alternates: { canonical: "/" },
+    robots: "index, follow, cache, archive",
     openGraph: {
         title: "Hari Krushna Multimedia",
         description: "Harikrushna Multimedia Institute, located in Surat, is renowned for being one of the top 10 institutes offering expert courses in animation, VFX, game design, and jewelry design. Our experienced faculty provides industry-leading education at affordable prices, ensuring fixed job placements for graduates. Discover the best classes in Surat and unleash your creativity with practical, hands-on training tailored for your career success.",
@@ -27,7 +22,7 @@ export const metadata = {
         keywords: "best classes in Surat, animation courses Surat, VFX training Surat, game design classes Surat, jewelry design courses Surat, top 10 institutes in Surat, affordable multimedia courses, Harikrushna Multimedia Institute, fixed job placement, Surat education",
         images: [
             'https://res.cloudinary.com/durzmjn4o/image/upload/v1721831839/HariKrushna/xnq60qfs6s7achymt6vf.png'
-            
+
         ],
     },
     twitter: {

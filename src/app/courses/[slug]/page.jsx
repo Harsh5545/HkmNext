@@ -31,10 +31,7 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: `/courses/${slug.replace(/%20/g, " ")}`,
     },
-    robots: {
-      index: true,
-      follow: true,
-    },
+    robots: "index, follow, cache, archive",
     openGraph: {
       title: course.heading || "Default Title",
       description: course.headingPara || "Default description",

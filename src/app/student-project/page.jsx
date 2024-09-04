@@ -9,10 +9,7 @@ export const metadata = {
   alternates: {
     canonical: "/student-project",
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: "index, follow, cache, archive",
   keywords: `'3D Architectural Design work', 'Surat multimedia school','Multimedia courses in Gujarat','3D architectural design projects', 'Student Animation Project Videos', 'Spider Man Graphic', 'Jewellery Design''Harikrushna Multimedia Institue',  `,
   openGraph: {
     title: "HKM - Student Project",
