@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Script from "next/script";
+import EnhancedLoader from "./EnhancedLoader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -77,11 +78,12 @@ export default function RootLayout({ children }) {
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
                 />
+                <EnhancedLoader>
                 <Navbar />
                 <div className=" mx-auto">
                     {children}
                 </div>
-                <Footer />
+                <Footer /></EnhancedLoader>
             </body>
         </html>
     );
