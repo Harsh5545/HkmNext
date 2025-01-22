@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Script from "next/script";
 import EnhancedLoader from "./EnhancedLoader";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -73,6 +74,7 @@ const schemaData = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+            <Head><link rel="icon" href="/favicon.ico" /></Head>
             <body className={inter.className}>
                 <Script
                     type="application/ld+json"
