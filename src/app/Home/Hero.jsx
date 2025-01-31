@@ -79,25 +79,25 @@ const Hero = () => {
 
   return (
     <div
-      className="min-h-screen w-full lg:w-[95%] mx-auto flex flex-col justify-center p-4 sm:p-6 md:p-8 lg:p-12"
+      className="h-full w-full lg:w-[95%] mx-auto flex flex-col justify-center p-4 sm:p-6 md:p-8 lg:p-12"
       style={{
         transform: `rotateX(${calculateRotation('y')}deg) rotateY(${-calculateRotation('x')}deg)`,
         perspective: '1000px',
         transition: 'transform 0.1s ease-out',
       }}
     >
-    <div className="flex flex-col lg:flex-row justify-between items-center h-full gap-6 md:gap-10 lg:gap-12">
+    <div className="flex flex-col lg:flex-row justify-between items-center h-full gap-8 md:gap-10 lg:gap-12">
   {/* Text Section */}
   <div className="flex flex-col w-full lg:w-1/2 items-start justify-center font-poppins text-white space-y-4 md:space-y-6">
     <h1
-      className="text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-medium leading-tight tracking-wide"
+      className="text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-5xl font-medium leading-tight tracking-wide"
       data-aos="fade-right"
       data-aos-delay="100"
     >
       Opportunity to Bring Your
     </h1>
     <h2
-      className="text-xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight tracking-wide"
+      className="text-2xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-6xl font-bold leading-tight tracking-wide"
       data-aos="fade-right"
       data-aos-delay="200"
     >
@@ -105,13 +105,13 @@ const Hero = () => {
     </h2>
     <div className="space-y-3 md:space-y-5">
       <h3
-        className="text-lg sm:text-2xl md:text-2xl lg:text-3xl font-medium leading-tight tracking-wide"
+        className="text-xl sm:text-2xl md:text-2xl lg:text-4xl font-medium leading-tight tracking-wide"
         data-aos="fade-right"
         data-aos-delay="300"
       >
         You Will Learn Here
       </h3>
-      <div className="text-lg sm:text-2xl md:text-2xl lg:text-3xl font-light">
+      <div className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-light">
         <TyperWriter />
       </div>
     </div>
@@ -126,7 +126,7 @@ const Hero = () => {
   </div>
 
   {/* 3D Model Section */}
-  <div className="w-full lg:w-1/2 h-[280px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px]">
+  <div className="w-full lg:w-1/2 h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[800px]">
     <Suspense fallback={<Loader1 />}>
       <ErrorBoundary>
         <Canvas>
