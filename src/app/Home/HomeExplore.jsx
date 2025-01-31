@@ -19,7 +19,7 @@ function HomeExplore() {
 
             </div>
             <div className="flex p-2 justify-center flex-col">
-                <span className="text-3xl">EXPLORE THE CREATION OF</span>
+                <h4 className="text-3xl">EXPLORE THE CREATION OF</h4>
                 <span className="text-4xl font-bold mb-5">EXISTING OPPORTUNITIES</span>
                 <p className="text-lg mb-5">
                     Enjoy each step along the way that takes you into the unknown space.
@@ -58,7 +58,7 @@ function HomeExplore() {
 
                         />
                         <div className="tooltip">
-                            <h4 className="text-2xl">PROFESSIONAL MASTERS</h4>
+                            <h5 className="text-2xl">PROFESSIONAL MASTERS</h5>
                             <p className="text-lg">
 
                                 Masters help Imagineers to bring their imagination to life.
@@ -76,7 +76,7 @@ function HomeExplore() {
                             alt=""
                         />
                         <div className="tooltip">
-                            <h5 className="text-2xl">SKILL BASED COACHING</h5>
+                            <h6 className="text-2xl">SKILL BASED COACHING</h6>
                             <p className="text-lg">
                                 Skill-based training will benefit you in ways beyond your
                                 imagination & opportunity to discover a hidden talent.

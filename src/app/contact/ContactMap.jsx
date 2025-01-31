@@ -69,9 +69,9 @@ function ContactMap() {
                   </svg>
                 </span>
 
-                <h4 className="mt-4 text-base font-medium text-gray-800 ">
+                <h2 className="mt-4 text-base font-medium text-gray-800 ">
                   Office
-                </h4>
+                </h2>
                 <p className="mt-2 text-sm text-gray-500 ">
                   Come say hello at our office HQ.
                 </p>
@@ -100,9 +100,9 @@ function ContactMap() {
                   </svg>
                 </span>
 
-                <h5 className="mt-4 text-base font-medium text-gray-800 ">
+                <h3 className="mt-4 text-base font-medium text-gray-800 ">
                   Phone
-                </h5>
+                </h3>
                 <p className="mt-2 text-sm text-gray-500 ">
                   Mon-sat from 9am to 8pm.
                 </p>

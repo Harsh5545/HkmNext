@@ -117,9 +117,9 @@ function Footer() {
                 </div>
 
                 <div>
-                  <h2 className="text-gray-700 uppercase">
+                  <p className="text-gray-700 uppercase">
                     Courses
-                  </h2>
+                  </p>
                   <Link
                     onClick={() => handleNavLinkClick()}
                     href="/courses/game-design"

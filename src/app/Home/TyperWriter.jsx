@@ -3,7 +3,7 @@ import TyperWriteComponent from 'typewriter-effect';
 import "./homeStyles.css"
 function TyperWriter() {
   return (
-    <div className=' font-poppins font-medium  text-2xl'>
+    <div className=' font-poppins font-normal lg:font-medium text-base lg:text-2xl'>
       <TyperWriteComponent
         options={{
           autoStart: true,
