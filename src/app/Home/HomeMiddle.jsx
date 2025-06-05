@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { CourseData } from "../../helpers/Constant";
-import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
+import { MdTrendingFlat } from "react-icons/md";
 import Button from "../../components/Button/Button";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -49,7 +49,7 @@ function HomeMiddle() {
             <p>
               Browse Online Courses
               <span>
-                <TrendingFlatIcon />
+                <MdTrendingFlat />
               </span>
             </p>
           </Link>

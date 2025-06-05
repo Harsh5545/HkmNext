@@ -114,6 +114,14 @@ function Footer() {
                   >
                     ContactUs
                   </Link>
+                    <a
+                    href="https://hkmcertiverification.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block mt-2 text-sm text-blue-600 hover:underline font-semibold"
+                  >
+                    Certification Verification
+                  </a>
                 </div>
 
                 <div>

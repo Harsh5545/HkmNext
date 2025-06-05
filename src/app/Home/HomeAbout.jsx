@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useTrail, animated } from 'react-spring';
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+import { MdTrendingFlat } from "react-icons/md"; // Add this import
 import './homeStyles.css';
 import { WhyChooseUs } from '../../helpers/Constant';
 
@@ -48,7 +48,7 @@ function HomeAbout() {
                 className="text-sm md:text-lg flex items-center font-poppins"
                 style={style}
               >
-                <KeyboardDoubleArrowRightIcon className="mr-2" />
+                <MdTrendingFlat className="mr-2" />
                 {WhyChooseUs[index]}
               </animated.li>
             ))}

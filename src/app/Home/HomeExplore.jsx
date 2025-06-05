@@ -2,7 +2,8 @@
 import React from "react";
 import "./homeStyles.css";
 import Button from "../../components/Button/Button";
-import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import { MdTrendingFlat } from "react-icons/md"; // <-- Replace MUI icon with react-icons
+
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -27,19 +28,19 @@ function HomeExplore() {
                 </p>
                 <ul className="text-lg flex gap-4 flex-col mb-8">
                     <li>
-                        <KeyboardDoubleArrowRightIcon />
+                        <MdTrendingFlat />
                         Visualization
                     </li>
                     <li>
-                        <KeyboardDoubleArrowRightIcon />
+                        <MdTrendingFlat />
                         Pre-Production
                     </li>
                     <li>
-                        <KeyboardDoubleArrowRightIcon />
+                        <MdTrendingFlat />
                         Production
                     </li>
                     <li>
-                        <KeyboardDoubleArrowRightIcon />
+                        <MdTrendingFlat />
                         Post-Preduction
                     </li>
                 </ul>
