@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { CourseDetails } from '@/helpers/Constant';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import { MdArrowRight } from 'react-icons/md';
 import Button from '@/components/Button/Button';
 import VerticalCarousel from '@/components/slider/VerticalCarousel';
 import FaqCourse from '@/components/Faq/FaqCourse';
@@ -153,7 +153,7 @@ const Page = async ({ params }) => {
           <ul className="items-start md:text-3xl text-xl">
             {course?.whatULearn?.map((learn, index) => (
               <li className="mt-1 flex items-center gap-2" key={index}>
-                <ArrowRightIcon />
+                <MdArrowRight />
                 {learn}
               </li>
             ))}
